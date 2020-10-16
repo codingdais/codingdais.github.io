@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Router | CodingDais</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="Router default and custom">
+    <link rel="preload" href="/assets/css/0.styles.5bd6d4d0.css" as="style"><link rel="preload" href="/assets/js/app.84ebb9eb.js" as="script"><link rel="preload" href="/assets/js/2.e4b52d1b.js" as="script"><link rel="preload" href="/assets/js/12.75dc3d61.js" as="script"><link rel="prefetch" href="/assets/js/10.f42cee4c.js"><link rel="prefetch" href="/assets/js/11.15f46172.js"><link rel="prefetch" href="/assets/js/13.ee06b57c.js"><link rel="prefetch" href="/assets/js/14.29d0454a.js"><link rel="prefetch" href="/assets/js/15.8f0829ef.js"><link rel="prefetch" href="/assets/js/16.eabe6809.js"><link rel="prefetch" href="/assets/js/17.b9ab7599.js"><link rel="prefetch" href="/assets/js/18.a93cf3ef.js"><link rel="prefetch" href="/assets/js/19.c1b005d2.js"><link rel="prefetch" href="/assets/js/20.b423fd65.js"><link rel="prefetch" href="/assets/js/21.9c8f0b45.js"><link rel="prefetch" href="/assets/js/22.0f2ac89e.js"><link rel="prefetch" href="/assets/js/23.3527495a.js"><link rel="prefetch" href="/assets/js/24.8fab01d4.js"><link rel="prefetch" href="/assets/js/25.b8fe479a.js"><link rel="prefetch" href="/assets/js/26.f4465bac.js"><link rel="prefetch" href="/assets/js/27.b2b83392.js"><link rel="prefetch" href="/assets/js/28.0195b470.js"><link rel="prefetch" href="/assets/js/29.4fa4fe12.js"><link rel="prefetch" href="/assets/js/3.77ab59e8.js"><link rel="prefetch" href="/assets/js/30.caa58080.js"><link rel="prefetch" href="/assets/js/31.adb2b3f6.js"><link rel="prefetch" href="/assets/js/32.e0eff7c7.js"><link rel="prefetch" href="/assets/js/33.9f405cf8.js"><link rel="prefetch" href="/assets/js/34.652e182d.js"><link rel="prefetch" href="/assets/js/35.b6c0d94e.js"><link rel="prefetch" href="/assets/js/36.79e07b90.js"><link rel="prefetch" href="/assets/js/37.d35d4cb3.js"><link rel="prefetch" href="/assets/js/38.34096d55.js"><link rel="prefetch" href="/assets/js/39.d8201e6f.js"><link rel="prefetch" href="/assets/js/4.d822e318.js"><link rel="prefetch" href="/assets/js/5.ea1a8308.js"><link rel="prefetch" href="/assets/js/6.7de44b1d.js"><link rel="prefetch" href="/assets/js/7.a9823576.js"><link rel="prefetch" href="/assets/js/8.6b47d49c.js"><link rel="prefetch" href="/assets/js/9.4eec40e1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.5bd6d4d0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">CodingDais</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Clouds" class="dropdown-title"><span class="title">Clouds</span> <span class="arrow down"></span></button> <button type="button" aria-label="Clouds" class="mobile-dropdown-title"><span class="title">Clouds</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/aws/" class="nav-link">
+  Aws
+</a></li><li class="dropdown-item"><!----> <a href="/gcp/" class="nav-link">
+  Gcp
+</a></li><li class="dropdown-item"><!----> <a href="/digitalocean/" class="nav-link">
+  DigitalOcean
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Framework" class="dropdown-title"><span class="title">Framework</span> <span class="arrow down"></span></button> <button type="button" aria-label="Framework" class="mobile-dropdown-title"><span class="title">Framework</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  Other
+</a></li><li class="dropdown-item"><!----> <a href="/vuejs/" class="nav-link">
+  Vuejs
+</a></li><li class="dropdown-item"><!----> <a href="/reactjs/" class="nav-link">
+  Reactjs
+</a></li><li class="dropdown-item"><!----> <a href="/nuxtjs/" class="nav-link">
+  NuxtJs
+</a></li><li class="dropdown-item"><!----> <a href="/angular/" class="nav-link">
+  Angular
+</a></li><li class="dropdown-item"><!----> <a href="/reactnative/" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/deno/" class="nav-link">
+  Deno
+</a></li><li class="dropdown-item"><!----> <a href="/flutter/" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/laravel/" class="nav-link">
+  Laravel
+</a></li><li class="dropdown-item"><!----> <a href="/spring/" class="nav-link">
+  Spring
+</a></li><li class="dropdown-item"><!----> <a href="/django/" class="nav-link">
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/flusk/" class="nav-link">
+  Flusk
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/tailwind/" class="nav-link">
+  Tailwind
+</a></li><li class="dropdown-item"><!----> <a href="/php/" class="nav-link">
+  Php
+</a></li><li class="dropdown-item"><!----> <a href="/csharp/" class="nav-link">
+  Csharp
+</a></li><li class="dropdown-item"><!----> <a href="/python/" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/dart/" class="nav-link">
+  Dart
+</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/mongodb/" class="nav-link">
+  MongoDb
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tools" class="dropdown-title"><span class="title">Tools</span> <span class="arrow down"></span></button> <button type="button" aria-label="Tools" class="mobile-dropdown-title"><span class="title">Tools</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/#git-github" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#ssh-besic" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#docker" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#editors" class="nav-link">
+  Editors
+</a></li><li class="dropdown-item"><!----> <a href="/os/" class="nav-link">
+  Os
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#crome-extension" class="nav-link">
+  Crome Extension
+</a></li></ul></div></div><div class="nav-item"><a href="/contact.html" class="nav-link">
+  Contact
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Clouds" class="dropdown-title"><span class="title">Clouds</span> <span class="arrow down"></span></button> <button type="button" aria-label="Clouds" class="mobile-dropdown-title"><span class="title">Clouds</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/aws/" class="nav-link">
+  Aws
+</a></li><li class="dropdown-item"><!----> <a href="/gcp/" class="nav-link">
+  Gcp
+</a></li><li class="dropdown-item"><!----> <a href="/digitalocean/" class="nav-link">
+  DigitalOcean
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Framework" class="dropdown-title"><span class="title">Framework</span> <span class="arrow down"></span></button> <button type="button" aria-label="Framework" class="mobile-dropdown-title"><span class="title">Framework</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  Other
+</a></li><li class="dropdown-item"><!----> <a href="/vuejs/" class="nav-link">
+  Vuejs
+</a></li><li class="dropdown-item"><!----> <a href="/reactjs/" class="nav-link">
+  Reactjs
+</a></li><li class="dropdown-item"><!----> <a href="/nuxtjs/" class="nav-link">
+  NuxtJs
+</a></li><li class="dropdown-item"><!----> <a href="/angular/" class="nav-link">
+  Angular
+</a></li><li class="dropdown-item"><!----> <a href="/reactnative/" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/deno/" class="nav-link">
+  Deno
+</a></li><li class="dropdown-item"><!----> <a href="/flutter/" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/laravel/" class="nav-link">
+  Laravel
+</a></li><li class="dropdown-item"><!----> <a href="/spring/" class="nav-link">
+  Spring
+</a></li><li class="dropdown-item"><!----> <a href="/django/" class="nav-link">
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/flusk/" class="nav-link">
+  Flusk
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/tailwind/" class="nav-link">
+  Tailwind
+</a></li><li class="dropdown-item"><!----> <a href="/php/" class="nav-link">
+  Php
+</a></li><li class="dropdown-item"><!----> <a href="/csharp/" class="nav-link">
+  Csharp
+</a></li><li class="dropdown-item"><!----> <a href="/python/" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/dart/" class="nav-link">
+  Dart
+</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/mongodb/" class="nav-link">
+  MongoDb
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tools" class="dropdown-title"><span class="title">Tools</span> <span class="arrow down"></span></button> <button type="button" aria-label="Tools" class="mobile-dropdown-title"><span class="title">Tools</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/#git-github" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#ssh-besic" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#docker" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#editors" class="nav-link">
+  Editors
+</a></li><li class="dropdown-item"><!----> <a href="/os/" class="nav-link">
+  Os
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#crome-extension" class="nav-link">
+  Crome Extension
+</a></li></ul></div></div><div class="nav-item"><a href="/contact.html" class="nav-link">
+  Contact
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Router</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/cat/laravel/router.html#router-default" class="sidebar-link">Router Default</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/cat/laravel/router.html#custom-route" class="sidebar-link">Custom Route</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="router"><a href="#router" class="header-anchor">#</a> Router</h1> <h2 id="router-default"><a href="#router-default" class="header-anchor">#</a> Router Default</h2> <p>Command+shift+. hide and show files</p> <p>Besic Laravel router</p> <div class="language-php extra-class"><pre class="language-php"><code>
+<span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token keyword">use</span> <span class="token package">Illuminate<span class="token punctuation">\</span>Support<span class="token punctuation">\</span>Facades<span class="token punctuation">\</span>Route</span><span class="token punctuation">;</span>
+
+<span class="token comment">// namespace help  controller folder add name</span>
+<span class="token comment">// name help you alias name with admin router name</span>
+<span class="token comment">// prefix help us with url attach</span>
+<span class="token comment">// middleware help us check user</span>
+Route<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">namespace</span><span class="token punctuation">(</span><span class="token double-quoted-string string">&quot;AdminAuth&quot;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">name</span><span class="token punctuation">(</span><span class="token double-quoted-string string">&quot;admin.&quot;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">;</span>
+Route<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">prefix</span><span class="token punctuation">(</span><span class="token double-quoted-string string">&quot;admin&quot;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    Route<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token double-quoted-string string">&quot;/login&quot;</span><span class="token punctuation">,</span> <span class="token double-quoted-string string">&quot;AdminLoginController@AdminLogin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+Route<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">namespace</span><span class="token punctuation">(</span><span class="token double-quoted-string string">&quot;Admin&quot;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">name</span><span class="token punctuation">(</span><span class="token double-quoted-string string">&quot;admin.&quot;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">;</span>
+    Route<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token single-quoted-string string">'prefix'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">'admin'</span><span class="token punctuation">,</span> <span class="token single-quoted-string string">'middleware'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span><span class="token single-quoted-string string">'auth:admin'</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        Route<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token double-quoted-string string">&quot;/&quot;</span><span class="token punctuation">,</span> <span class="token double-quoted-string string">&quot;AdminDashboard@Dashboard&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</span></code></pre></div><h2 id="custom-route"><a href="#custom-route" class="header-anchor">#</a> Custom Route</h2> <p>First we create router files inside <code>router</code> folder</p> <ul><li>web.php</li> <li>admin.php</li> <li>manager.php</li> <li>api2.php</li></ul> <div class="language-php extra-class"><pre class="language-php"><code><span class="token comment">// web.php</span>
+Route<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'/'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">view</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'welcome'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">// ----------------------------------------------</span>
+
+<span class="token comment">// api2.php</span>
+
+<span class="token comment">//http://127.0.0.1:8000/api/v2/celeb</span>
+Route<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token double-quoted-string string">&quot;/celeb&quot;</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token double-quoted-string string">&quot;working&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// ------------------------------------------------</span>
+
+<span class="token comment">// Api\V1 mean we create folder add inside controller</span>
+<span class="token comment">//Route::get(&quot;dashboard&quot;, &quot;Api\V1\DashboardController@index&quot;);</span>
+Route<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token double-quoted-string string">&quot;dashboard&quot;</span><span class="token punctuation">,</span> <span class="token double-quoted-string string">&quot;DashboardController@index&quot;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">name</span><span class="token punctuation">(</span><span class="token double-quoted-string string">&quot;index&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">// ------------------------------------------------</span>
+
+<span class="token comment">// admin.php</span>
+
+Route<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token double-quoted-string string">&quot;/admin&quot;</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+   <span class="token keyword">return</span> <span class="token single-quoted-string string">'admin'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><p><code>DashboardController.php</code></p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token keyword">namespace</span> <span class="token package">App<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>Controllers<span class="token punctuation">\</span>Api<span class="token punctuation">\</span>V1</span><span class="token punctuation">;</span>
+
+<span class="token keyword">use</span> <span class="token package">App<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>Controllers<span class="token punctuation">\</span>Controller</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Illuminate<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>Request</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">DashboardController</span> <span class="token keyword">extends</span> <span class="token class-name">Controller</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">index</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token double-quoted-string string">&quot;dashboard&quot;</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</span></code></pre></div><p><code>RouteServiceProvider.php</code> we add everything here</p> <div class="language-php extra-class"><pre class="language-php"><code>    <span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token keyword">namespace</span> <span class="token package">App<span class="token punctuation">\</span>Providers</span><span class="token punctuation">;</span>
+
+<span class="token keyword">use</span> <span class="token package">Illuminate<span class="token punctuation">\</span>Foundation<span class="token punctuation">\</span>Support<span class="token punctuation">\</span>Providers<span class="token punctuation">\</span>RouteServiceProvider</span> <span class="token keyword">as</span> ServiceProvider<span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Illuminate<span class="token punctuation">\</span>Support<span class="token punctuation">\</span>Facades<span class="token punctuation">\</span>Route</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">RouteServiceProvider</span> <span class="token keyword">extends</span> <span class="token class-name">ServiceProvider</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * This namespace is applied to your controller routes.
+     *
+     * In addition, it is set as the URL generator's root namespace.
+     *
+     * @var string
+     */</span>
+    <span class="token keyword">protected</span> <span class="token variable">$namespace</span> <span class="token operator">=</span> <span class="token single-quoted-string string">'App\Http\Controllers'</span><span class="token punctuation">;</span>
+    <span class="token comment">/**
+     * The path to the &quot;home&quot; route for your application.
+     *
+     * @var string
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">const</span> <span class="token constant">HOME</span> <span class="token operator">=</span> <span class="token single-quoted-string string">'/home'</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * Define your route model bindings, pattern filters, etc.
+     *
+     * @return void
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">boot</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token comment">//</span>
+
+        <span class="token keyword">parent</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">boot</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * Define the routes for the application.
+     *
+     * @return void
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">mapApiRoutes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// Api2 file added</span>
+        <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">mapApiV2Routes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">mapWebRoutes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// Admin file added</span>
+        <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">mapAdminRoutes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// Celebrity file added</span>
+        <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">mapCelebrityRoutes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    
+    <span class="token comment">// we have to follow this step</span>
+    <span class="token keyword">protected</span> <span class="token keyword">function</span> <span class="token function">mapApiV2Routes</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+<span class="token comment">//        http://127.0.0.1:8000/api/v2/celeb</span>
+        <span class="token comment">// prefix mean by default set</span>
+        Route<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">prefix</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'api/v2'</span><span class="token punctuation">)</span>
+            <span class="token comment">// this is middleware name alias</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">name</span><span class="token punctuation">(</span><span class="token double-quoted-string string">&quot;api.&quot;</span><span class="token punctuation">)</span>
+            <span class="token comment">// this is middleware you can attach</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">middleware</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'api'</span><span class="token punctuation">)</span>
+            <span class="token comment">// this is by default controller space</span>
+<span class="token comment">//            -&gt;namespace($this-&gt;namespace)</span>
+            <span class="token comment">// This help you controller path name space</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token keyword">namespace</span><span class="token punctuation">(</span><span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token keyword">namespace</span><span class="token punctuation">.</span><span class="token single-quoted-string string">'\Api\V1'</span><span class="token punctuation">)</span>
+            <span class="token comment">// this is file path</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token function">base_path</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'routes/api2.php'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+
+    <span class="token comment">/**
+     * Define the &quot;web&quot; routes for the application.
+     *
+     * These routes all receive session state, CSRF protection, etc.
+     *
+     * @return void
+     */</span>
+    <span class="token keyword">protected</span> <span class="token keyword">function</span> <span class="token function">mapWebRoutes</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        Route<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">middleware</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'web'</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token keyword">namespace</span><span class="token punctuation">(</span><span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token keyword">namespace</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token function">base_path</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'routes/web.php'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">protected</span> <span class="token keyword">function</span> <span class="token function">mapAdminRoutes</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        Route<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">prefix</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'admin'</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">middleware</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'web'</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token keyword">namespace</span><span class="token punctuation">(</span><span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token keyword">namespace</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token function">base_path</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'routes/admin.php'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">protected</span> <span class="token keyword">function</span> <span class="token function">mapCelebrityRoutes</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        Route<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">middleware</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'web'</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token keyword">namespace</span><span class="token punctuation">(</span><span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token keyword">namespace</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token function">base_path</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'routes/celebrity.php'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * Define the &quot;api&quot; routes for the application.
+     *
+     * These routes are typically stateless.
+     *
+     * @return void
+     */</span>
+    <span class="token keyword">protected</span> <span class="token keyword">function</span> <span class="token function">mapApiRoutes</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        Route<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">prefix</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'api'</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">middleware</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'api'</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token keyword">namespace</span><span class="token punctuation">(</span><span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token keyword">namespace</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token function">base_path</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'routes/api.php'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+<span class="token punctuation">}</span>
+
+
+</span></code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.84ebb9eb.js" defer></script><script src="/assets/js/2.e4b52d1b.js" defer></script><script src="/assets/js/12.75dc3d61.js" defer></script>
+  </body>
+</html>

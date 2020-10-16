@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sql Advance | CodingDais</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="Coding Dais is the best online web, mobile, game development, and programming tutorials for all of the latest web, mobile, game technologies including Node.js, Angular, React.js, Vue.js, Laravel, Django, Spring Boot, Php, Python, Javascript, Java, C# and much more">
+    <link rel="preload" href="/assets/css/0.styles.5bd6d4d0.css" as="style"><link rel="preload" href="/assets/js/app.84ebb9eb.js" as="script"><link rel="preload" href="/assets/js/2.e4b52d1b.js" as="script"><link rel="preload" href="/assets/js/29.4fa4fe12.js" as="script"><link rel="prefetch" href="/assets/js/10.f42cee4c.js"><link rel="prefetch" href="/assets/js/11.15f46172.js"><link rel="prefetch" href="/assets/js/12.75dc3d61.js"><link rel="prefetch" href="/assets/js/13.ee06b57c.js"><link rel="prefetch" href="/assets/js/14.29d0454a.js"><link rel="prefetch" href="/assets/js/15.8f0829ef.js"><link rel="prefetch" href="/assets/js/16.eabe6809.js"><link rel="prefetch" href="/assets/js/17.b9ab7599.js"><link rel="prefetch" href="/assets/js/18.a93cf3ef.js"><link rel="prefetch" href="/assets/js/19.c1b005d2.js"><link rel="prefetch" href="/assets/js/20.b423fd65.js"><link rel="prefetch" href="/assets/js/21.9c8f0b45.js"><link rel="prefetch" href="/assets/js/22.0f2ac89e.js"><link rel="prefetch" href="/assets/js/23.3527495a.js"><link rel="prefetch" href="/assets/js/24.8fab01d4.js"><link rel="prefetch" href="/assets/js/25.b8fe479a.js"><link rel="prefetch" href="/assets/js/26.f4465bac.js"><link rel="prefetch" href="/assets/js/27.b2b83392.js"><link rel="prefetch" href="/assets/js/28.0195b470.js"><link rel="prefetch" href="/assets/js/3.77ab59e8.js"><link rel="prefetch" href="/assets/js/30.caa58080.js"><link rel="prefetch" href="/assets/js/31.adb2b3f6.js"><link rel="prefetch" href="/assets/js/32.e0eff7c7.js"><link rel="prefetch" href="/assets/js/33.9f405cf8.js"><link rel="prefetch" href="/assets/js/34.652e182d.js"><link rel="prefetch" href="/assets/js/35.b6c0d94e.js"><link rel="prefetch" href="/assets/js/36.79e07b90.js"><link rel="prefetch" href="/assets/js/37.d35d4cb3.js"><link rel="prefetch" href="/assets/js/38.34096d55.js"><link rel="prefetch" href="/assets/js/39.d8201e6f.js"><link rel="prefetch" href="/assets/js/4.d822e318.js"><link rel="prefetch" href="/assets/js/5.ea1a8308.js"><link rel="prefetch" href="/assets/js/6.7de44b1d.js"><link rel="prefetch" href="/assets/js/7.a9823576.js"><link rel="prefetch" href="/assets/js/8.6b47d49c.js"><link rel="prefetch" href="/assets/js/9.4eec40e1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.5bd6d4d0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">CodingDais</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Clouds" class="dropdown-title"><span class="title">Clouds</span> <span class="arrow down"></span></button> <button type="button" aria-label="Clouds" class="mobile-dropdown-title"><span class="title">Clouds</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/aws/" class="nav-link">
+  Aws
+</a></li><li class="dropdown-item"><!----> <a href="/gcp/" class="nav-link">
+  Gcp
+</a></li><li class="dropdown-item"><!----> <a href="/digitalocean/" class="nav-link">
+  DigitalOcean
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Framework" class="dropdown-title"><span class="title">Framework</span> <span class="arrow down"></span></button> <button type="button" aria-label="Framework" class="mobile-dropdown-title"><span class="title">Framework</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  Other
+</a></li><li class="dropdown-item"><!----> <a href="/vuejs/" class="nav-link">
+  Vuejs
+</a></li><li class="dropdown-item"><!----> <a href="/reactjs/" class="nav-link">
+  Reactjs
+</a></li><li class="dropdown-item"><!----> <a href="/nuxtjs/" class="nav-link">
+  NuxtJs
+</a></li><li class="dropdown-item"><!----> <a href="/angular/" class="nav-link">
+  Angular
+</a></li><li class="dropdown-item"><!----> <a href="/reactnative/" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/deno/" class="nav-link">
+  Deno
+</a></li><li class="dropdown-item"><!----> <a href="/flutter/" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/laravel/" class="nav-link">
+  Laravel
+</a></li><li class="dropdown-item"><!----> <a href="/spring/" class="nav-link">
+  Spring
+</a></li><li class="dropdown-item"><!----> <a href="/django/" class="nav-link">
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/flusk/" class="nav-link">
+  Flusk
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/tailwind/" class="nav-link">
+  Tailwind
+</a></li><li class="dropdown-item"><!----> <a href="/php/" class="nav-link">
+  Php
+</a></li><li class="dropdown-item"><!----> <a href="/csharp/" class="nav-link">
+  Csharp
+</a></li><li class="dropdown-item"><!----> <a href="/python/" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/dart/" class="nav-link">
+  Dart
+</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link router-link-active">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/mongodb/" class="nav-link">
+  MongoDb
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tools" class="dropdown-title"><span class="title">Tools</span> <span class="arrow down"></span></button> <button type="button" aria-label="Tools" class="mobile-dropdown-title"><span class="title">Tools</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/#git-github" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#ssh-besic" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#docker" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#editors" class="nav-link">
+  Editors
+</a></li><li class="dropdown-item"><!----> <a href="/os/" class="nav-link">
+  Os
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#crome-extension" class="nav-link">
+  Crome Extension
+</a></li></ul></div></div><div class="nav-item"><a href="/contact.html" class="nav-link">
+  Contact
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Clouds" class="dropdown-title"><span class="title">Clouds</span> <span class="arrow down"></span></button> <button type="button" aria-label="Clouds" class="mobile-dropdown-title"><span class="title">Clouds</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/aws/" class="nav-link">
+  Aws
+</a></li><li class="dropdown-item"><!----> <a href="/gcp/" class="nav-link">
+  Gcp
+</a></li><li class="dropdown-item"><!----> <a href="/digitalocean/" class="nav-link">
+  DigitalOcean
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Framework" class="dropdown-title"><span class="title">Framework</span> <span class="arrow down"></span></button> <button type="button" aria-label="Framework" class="mobile-dropdown-title"><span class="title">Framework</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  Other
+</a></li><li class="dropdown-item"><!----> <a href="/vuejs/" class="nav-link">
+  Vuejs
+</a></li><li class="dropdown-item"><!----> <a href="/reactjs/" class="nav-link">
+  Reactjs
+</a></li><li class="dropdown-item"><!----> <a href="/nuxtjs/" class="nav-link">
+  NuxtJs
+</a></li><li class="dropdown-item"><!----> <a href="/angular/" class="nav-link">
+  Angular
+</a></li><li class="dropdown-item"><!----> <a href="/reactnative/" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/deno/" class="nav-link">
+  Deno
+</a></li><li class="dropdown-item"><!----> <a href="/flutter/" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/laravel/" class="nav-link">
+  Laravel
+</a></li><li class="dropdown-item"><!----> <a href="/spring/" class="nav-link">
+  Spring
+</a></li><li class="dropdown-item"><!----> <a href="/django/" class="nav-link">
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/flusk/" class="nav-link">
+  Flusk
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/tailwind/" class="nav-link">
+  Tailwind
+</a></li><li class="dropdown-item"><!----> <a href="/php/" class="nav-link">
+  Php
+</a></li><li class="dropdown-item"><!----> <a href="/csharp/" class="nav-link">
+  Csharp
+</a></li><li class="dropdown-item"><!----> <a href="/python/" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/dart/" class="nav-link">
+  Dart
+</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link router-link-active">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/mongodb/" class="nav-link">
+  MongoDb
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tools" class="dropdown-title"><span class="title">Tools</span> <span class="arrow down"></span></button> <button type="button" aria-label="Tools" class="mobile-dropdown-title"><span class="title">Tools</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/#git-github" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#ssh-besic" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#docker" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#editors" class="nav-link">
+  Editors
+</a></li><li class="dropdown-item"><!----> <a href="/os/" class="nav-link">
+  Os
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#crome-extension" class="nav-link">
+  Crome Extension
+</a></li></ul></div></div><div class="nav-item"><a href="/contact.html" class="nav-link">
+  Contact
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/mysql/" aria-current="page" class="sidebar-link">Sql</a></li><li><a href="/mysql/besic.html" class="sidebar-link">Sql Besic</a></li><li><a href="/mysql/advance.html" aria-current="page" class="active sidebar-link">Sql Advance</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/mysql/advance.html#procedure" class="sidebar-link">PROCEDURE</a></li><li class="sidebar-sub-header"><a href="/mysql/advance.html#variables" class="sidebar-link">Variables</a></li><li class="sidebar-sub-header"><a href="/mysql/advance.html#trigger" class="sidebar-link">Trigger</a></li><li class="sidebar-sub-header"><a href="/mysql/advance.html#events" class="sidebar-link">Events</a></li><li class="sidebar-sub-header"><a href="/mysql/advance.html#transactions" class="sidebar-link">TRANSACTIONS</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="sql-advance"><a href="#sql-advance" class="header-anchor">#</a> Sql Advance</h1> <h2 id="procedure"><a href="#procedure" class="header-anchor">#</a> PROCEDURE</h2> <p>Procedure is advance query of sql we use it java and c#</p> <div class="language-sql extra-class"><pre class="language-sql"><code>
+<span class="token keyword">DELIMITER</span> $$
+<span class="token keyword">CREATE</span> <span class="token keyword">PROCEDURE</span> get_clients<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">BEGIN</span>
+    <span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> clients<span class="token punctuation">;</span>
+
+<span class="token keyword">END</span> $$
+<span class="token keyword">DELIMITER</span> <span class="token punctuation">;</span>
+
+<span class="token comment">-- call this function</span>
+<span class="token keyword">CALL</span> get_clients<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- one more example</span>
+
+<span class="token keyword">DELIMITER</span> $$
+<span class="token keyword">CREATE</span> <span class="token keyword">PROCEDURE</span> get_invoice_with_balance<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">BEGIN</span>
+    <span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> invoice_with_balance
+        <span class="token keyword">WHERE</span> balance <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword">END</span> $$
+<span class="token keyword">DELIMITER</span> <span class="token punctuation">;</span>
+
+
+<span class="token comment">-- Drop Procedure</span>
+<span class="token keyword">DROP</span> <span class="token keyword">PROCEDURE</span> get_clients<span class="token punctuation">;</span>
+<span class="token keyword">DROP</span> <span class="token keyword">PROCEDURE</span> <span class="token keyword">IF</span> <span class="token keyword">EXISTS</span> get_clients<span class="token punctuation">;</span>
+
+
+<span class="token comment">-- Drop Procedure and create</span>
+
+<span class="token keyword">DROP</span> <span class="token keyword">PROCEDURE</span> <span class="token keyword">IF</span> <span class="token keyword">EXISTS</span> get_clients<span class="token punctuation">;</span>
+<span class="token keyword">DELIMITER</span> $$
+<span class="token keyword">CREATE</span> <span class="token keyword">PROCEDURE</span> get_clients<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">BEGIN</span>
+    <span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> clients<span class="token punctuation">;</span>
+
+<span class="token keyword">END</span> $$
+<span class="token keyword">DELIMITER</span> <span class="token punctuation">;</span>
+
+
+<span class="token comment">-- Procedure with parameter</span>
+<span class="token keyword">DELIMITER</span> $$
+<span class="token keyword">CREATE</span> <span class="token keyword">PROCEDURE</span> get_clients_by_state<span class="token punctuation">(</span>state <span class="token keyword">CHAR</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">BEGIN</span>
+    <span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> clients c <span class="token keyword">WHERE</span> c<span class="token punctuation">.</span>state <span class="token operator">=</span> state<span class="token punctuation">;</span>
+<span class="token keyword">END</span> $$
+<span class="token keyword">DELIMITER</span> <span class="token punctuation">;</span>
+
+<span class="token comment">-- CALL BY PARAMETER QUERY</span>
+<span class="token comment">-- SET @state='mk'; CALL `get_clients_by_state`(@state);</span>
+
+<span class="token comment">---------------------------------------------------</span>
+<span class="token comment">-- ANOTHER EXAMPLE</span>
+
+<span class="token keyword">DELIMITER</span> $$
+<span class="token keyword">CREATE</span> <span class="token keyword">PROCEDURE</span> get_invoice_by_client<span class="token punctuation">(</span>client_id <span class="token keyword">INT</span><span class="token punctuation">)</span>
+<span class="token keyword">BEGIN</span>
+    <span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> invoices i <span class="token keyword">WHERE</span> i<span class="token punctuation">.</span>client_id <span class="token operator">=</span> client_id<span class="token punctuation">;</span>
+<span class="token keyword">END</span> $$
+<span class="token keyword">DELIMITER</span> <span class="token punctuation">;</span>
+
+<span class="token comment">-- CALL BY SET @client_id='1'; CALL `get_invoice_by_client`(@client_id);</span>
+
+<span class="token comment">------------ by default paramater ----------------</span>
+
+<span class="token keyword">DROP</span> <span class="token keyword">PROCEDURE</span> <span class="token keyword">IF</span> <span class="token keyword">EXISTS</span> get_clients_by_state<span class="token punctuation">;</span>
+<span class="token keyword">DELIMITER</span> $$
+<span class="token keyword">CREATE</span> <span class="token keyword">PROCEDURE</span> get_clients_by_state<span class="token punctuation">(</span>state <span class="token keyword">CHAR</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">BEGIN</span>
+    <span class="token keyword">IF</span> state <span class="token operator">IS</span> <span class="token boolean">NULL</span> <span class="token keyword">THEN</span>
+        <span class="token keyword">SET</span> state <span class="token operator">=</span> <span class="token string">'OR'</span><span class="token punctuation">;</span>
+    <span class="token keyword">END</span> <span class="token keyword">IF</span><span class="token punctuation">;</span>
+    <span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> clients c <span class="token keyword">WHERE</span> c<span class="token punctuation">.</span>state <span class="token operator">=</span> state<span class="token punctuation">;</span>
+<span class="token keyword">END</span> $$
+<span class="token keyword">DELIMITER</span> <span class="token punctuation">;</span>
+
+<span class="token comment">-- CALL BY DEFAULT PARAMETER -&gt; CALL get_clients_by_state(NULL); -- NULL YOU HAVE TO PASS</span>
+
+
+<span class="token comment">-- ANOTHER EXAMPLE</span>
+
+<span class="token keyword">DROP</span> <span class="token keyword">PROCEDURE</span> <span class="token keyword">IF</span> <span class="token keyword">EXISTS</span> get_clients_by_state<span class="token punctuation">;</span>
+<span class="token keyword">DELIMITER</span> $$
+<span class="token keyword">CREATE</span> <span class="token keyword">PROCEDURE</span> get_clients_by_state<span class="token punctuation">(</span>state <span class="token keyword">CHAR</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">BEGIN</span>
+    <span class="token keyword">IF</span> state <span class="token operator">IS</span> <span class="token boolean">NULL</span> <span class="token keyword">THEN</span>
+        <span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> clients<span class="token punctuation">;</span>
+    <span class="token keyword">ELSE</span>
+        <span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> clients c <span class="token keyword">WHERE</span> c<span class="token punctuation">.</span>state <span class="token operator">=</span> state<span class="token punctuation">;</span>
+    <span class="token keyword">END</span> <span class="token keyword">IF</span><span class="token punctuation">;</span>
+<span class="token keyword">END</span> $$
+<span class="token keyword">DELIMITER</span> <span class="token punctuation">;</span>
+
+<span class="token comment">-- short query of above query</span>
+<span class="token keyword">DELIMITER</span> $$
+<span class="token keyword">CREATE</span> <span class="token keyword">PROCEDURE</span> get_clients_by_state<span class="token punctuation">(</span>state <span class="token keyword">CHAR</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">BEGIN</span>
+    <span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> clients c <span class="token keyword">WHERE</span> c<span class="token punctuation">.</span>state <span class="token operator">=</span> IFNULL<span class="token punctuation">(</span>state<span class="token punctuation">,</span> c<span class="token punctuation">.</span>state<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">-- ifnull mean state null state run kro otherwise c.state</span>
+<span class="token keyword">END</span> $$
+<span class="token keyword">DELIMITER</span> <span class="token punctuation">;</span>
+
+<span class="token comment">-- CALL BY =&gt; CALL get_clients_by_state(NULL)</span>
+<span class="token comment">-- CALL BY =&gt; CALL get_clients_by_state('or')</span>
+
+
+<span class="token comment">-- ANDVANCE EXAMPLE</span>
+<span class="token keyword">DELIMITER</span> $$
+<span class="token keyword">CREATE</span> <span class="token keyword">PROCEDURE</span> get_payments<span class="token punctuation">(</span>client_id <span class="token keyword">INT</span><span class="token punctuation">,</span> payment_method_id <span class="token keyword">TINYINT</span><span class="token punctuation">)</span>
+<span class="token keyword">BEGIN</span>
+    <span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> payments p
+        <span class="token keyword">WHERE</span> p<span class="token punctuation">.</span>client_id <span class="token operator">=</span> IFNULL<span class="token punctuation">(</span>client_id<span class="token punctuation">,</span> p<span class="token punctuation">.</span>client_id<span class="token punctuation">)</span>
+        <span class="token operator">AND</span> p<span class="token punctuation">.</span>payment_method <span class="token operator">=</span> IFNULL<span class="token punctuation">(</span>payment_method_id<span class="token punctuation">,</span> p<span class="token punctuation">.</span>payment_method<span class="token punctuation">)</span>
+     <span class="token comment">-- ifnull mean state null state run kro otherwise c.state</span>
+<span class="token keyword">END</span> $$
+<span class="token keyword">DELIMITER</span> <span class="token punctuation">;</span>
+
+<span class="token comment">-- CALL BY =&gt; CALL get_payments(NULL, NULL)</span>
+<span class="token comment">-- CALL BY =&gt; CALL get_payments(1, NULL)</span>
+<span class="token comment">--</span>
+
+
+<span class="token comment">-- MAKE PAYMENT UPDATE</span>
+<span class="token keyword">DELIMITER</span> $$
+<span class="token keyword">CREATE</span> <span class="token keyword">PROCEDURE</span> make_payment<span class="token punctuation">(</span>invoice_id <span class="token keyword">INT</span><span class="token punctuation">,</span> payment_amount <span class="token keyword">DECIMAL</span><span class="token punctuation">(</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span> payment_date <span class="token keyword">DATE</span><span class="token punctuation">)</span>
+<span class="token keyword">BEGIN</span>
+    <span class="token keyword">UPDATE</span> invoices i
+        <span class="token keyword">SET</span> i<span class="token punctuation">.</span>payment_total <span class="token operator">=</span> payment_amount<span class="token punctuation">,</span>
+            i<span class="token punctuation">.</span>payment_date <span class="token operator">=</span> payment_date
+        <span class="token keyword">WHERE</span> i<span class="token punctuation">.</span>invoice_id <span class="token operator">=</span> invoice_id<span class="token punctuation">;</span>
+<span class="token keyword">END</span> $$
+<span class="token keyword">DELIMITER</span> <span class="token punctuation">;</span>
+
+<span class="token comment">-- CALL BY =&gt; SET @p0='2'; SET @p1='100'; SET @p2='2019-01-01'; CALL `make_payment`(@p0, @p1, @p2);</span>
+
+
+
+<span class="token comment">-------------------------- VALIDATION ERROR SET---------------------------------</span>
+<span class="token keyword">DROP</span> <span class="token keyword">PROCEDURE</span> <span class="token keyword">IF</span> <span class="token keyword">EXISTS</span> make_payment<span class="token punctuation">;</span>
+<span class="token keyword">DELIMITER</span> $$
+<span class="token keyword">CREATE</span> <span class="token keyword">PROCEDURE</span> make_payment<span class="token punctuation">(</span>invoice_id <span class="token keyword">INT</span><span class="token punctuation">,</span> payment_amount <span class="token keyword">DECIMAL</span><span class="token punctuation">(</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span> payment_date <span class="token keyword">DATE</span><span class="token punctuation">)</span>
+<span class="token keyword">BEGIN</span>
+    <span class="token keyword">IF</span> payment_amount <span class="token operator">&lt;=</span> <span class="token number">0</span> <span class="token keyword">THEN</span>
+        SIGNAL SQLSTATE <span class="token string">'22003'</span>
+            <span class="token keyword">SET</span> MESSAGE_TEXT <span class="token operator">=</span> <span class="token string">'Invalid payment amount'</span><span class="token punctuation">;</span>
+    <span class="token keyword">END</span> <span class="token keyword">IF</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">UPDATE</span> invoices i
+        <span class="token keyword">SET</span> i<span class="token punctuation">.</span>payment_total <span class="token operator">=</span> payment_amount<span class="token punctuation">,</span>
+            i<span class="token punctuation">.</span>payment_date <span class="token operator">=</span> payment_date
+        <span class="token keyword">WHERE</span> i<span class="token punctuation">.</span>invoice_id <span class="token operator">=</span> invoice_id<span class="token punctuation">;</span>
+<span class="token keyword">END</span> $$
+<span class="token keyword">DELIMITER</span> <span class="token punctuation">;</span>
+
+<span class="token comment">-- fill negtive amount payment like -100 get error</span>
+
+<span class="token comment">---------------- Output Parameters --------------------</span>
+
+
+<span class="token keyword">DROP</span> <span class="token keyword">PROCEDURE</span> <span class="token keyword">IF</span> <span class="token keyword">EXISTS</span> get_unpayment<span class="token punctuation">;</span>
+<span class="token keyword">DELIMITER</span> $$
+<span class="token keyword">CREATE</span> <span class="token keyword">PROCEDURE</span> get_unpayment<span class="token punctuation">(</span>
+    client_id <span class="token keyword">INT</span><span class="token punctuation">,</span>
+    <span class="token keyword">OUT</span> invoices_count <span class="token keyword">INT</span><span class="token punctuation">,</span> <span class="token comment">-- OUT MEAN PRINT IN OUTPUT</span>
+    <span class="token keyword">OUT</span> invoices_total <span class="token keyword">DECIMAL</span><span class="token punctuation">(</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token comment">-- OUT MEAN PRINT IN OUTPUT</span>
+<span class="token punctuation">)</span>
+<span class="token keyword">BEGIN</span>
+    <span class="token keyword">SELECT</span> <span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">SUM</span><span class="token punctuation">(</span>invoice_total<span class="token punctuation">)</span>
+    <span class="token keyword">INTO</span> invoices_count<span class="token punctuation">,</span> invoices_total
+    <span class="token keyword">FROM</span> invoices i
+    <span class="token keyword">WHERE</span> i<span class="token punctuation">.</span>client_id <span class="token operator">=</span> client_id
+        <span class="token operator">AND</span> payment_total <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+<span class="token keyword">END</span> $$
+<span class="token keyword">DELIMITER</span> <span class="token punctuation">;</span>
+
+<span class="token comment">-- Call by =&gt; SET @p0='2'; CALL `get_unpayment`(@p0, @p1, @p2); SELECT @p1 AS `invoices_count`, @p2 AS `invoices_total`;</span>
+
+</code></pre></div><h2 id="variables"><a href="#variables" class="header-anchor">#</a> Variables</h2> <p>User, session variables if you disconnect mysql automatic destroy</p> <p>how to create variable</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SET</span> <span class="token variable">@name</span> <span class="token operator">=</span> <span class="token string">&quot;Rohan Dhiman&quot;</span><span class="token punctuation">;</span>
+
+
+<span class="token keyword">DELIMITER</span> $$
+<span class="token keyword">CREATE</span> <span class="token keyword">PROCEDURE</span> get_risk_factor<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">BEGIN</span>
+    <span class="token comment">-- declare variables</span>
+    <span class="token keyword">DECLARE</span> risk_factor <span class="token keyword">DECIMAL</span><span class="token punctuation">(</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token keyword">DEFAULT</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">DECLARE</span> invoices_total <span class="token keyword">DECIMAL</span><span class="token punctuation">(</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">DECLARE</span> invoices_count <span class="token keyword">INT</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">SELECT</span> <span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">SUM</span><span class="token punctuation">(</span>invoice_total<span class="token punctuation">)</span>
+    <span class="token keyword">INTO</span> invoices_count<span class="token punctuation">,</span> invoices_total
+    <span class="token keyword">FROM</span> invoices<span class="token punctuation">;</span>
+
+    <span class="token keyword">SET</span> risk_factor <span class="token operator">=</span> invoice_total <span class="token operator">/</span> invoices_count <span class="token operator">*</span> <span class="token number">5</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">SELECT</span> risk_factor<span class="token punctuation">;</span>
+
+<span class="token keyword">END</span> $$
+<span class="token keyword">DELIMITER</span> <span class="token punctuation">;</span>
+
+
+
+</code></pre></div><p>Local variable inside function and procedure when we inside function, procedure
+when function or procedure executed it automatic destroy;</p> <h2 id="trigger"><a href="#trigger" class="header-anchor">#</a> Trigger</h2> <p>A block of SQL code that automatically gets executed before or after an insert, update or delete statement.</p> <p>show all triggers <code>SHOW TRIGGERS</code>
+filter trigger <code>SHOW TRIGGERS LIKE 'payments%'</code></p> <p>Drop trigger <code>DROP TRIGGER IF EXISTS payements_after_insert</code></p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">DELIMITER</span> $$
+<span class="token keyword">CREATE</span> <span class="token keyword">TRIGGER</span> payments_after_insert
+    <span class="token keyword">AFTER</span> <span class="token keyword">INSERT</span> <span class="token keyword">ON</span> payments
+    <span class="token keyword">FOR EACH ROW</span>
+<span class="token keyword">BEGIN</span>
+    <span class="token comment">-- right here any code</span>
+    <span class="token keyword">UPDATE</span> invoices
+    <span class="token keyword">SET</span> payment_total <span class="token operator">=</span> payment_total <span class="token operator">+</span> <span class="token comment">--NEW, OLD</span>
+    NEW<span class="token punctuation">.</span>amount
+    <span class="token keyword">WHERE</span> invoice_id <span class="token operator">=</span> NEW<span class="token punctuation">.</span>invoice_id<span class="token punctuation">;</span>
+
+<span class="token keyword">END</span> $$
+DELIMITTER <span class="token punctuation">;</span>
+
+<span class="token comment">-- test it by insert method</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> payemnts <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token keyword">DEFAULT</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token string">'2019-01-01'</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- one more Example</span>
+<span class="token keyword">DELIMITER</span> $$
+<span class="token keyword">CREATE</span> <span class="token keyword">TRIGGER</span> payments_after_delete
+    <span class="token keyword">AFTER</span> <span class="token keyword">DELETE</span> <span class="token keyword">ON</span> payments
+    <span class="token keyword">FOR EACH ROW</span>
+<span class="token keyword">BEGIN</span>
+    <span class="token comment">-- right here any code</span>
+    <span class="token keyword">UPDATE</span> invoices
+    <span class="token keyword">SET</span> payment_total <span class="token operator">=</span> payment_total <span class="token operator">-</span> <span class="token comment">--NEW, OLD</span>
+    OLD<span class="token punctuation">.</span>amount
+    <span class="token keyword">WHERE</span> invoice_id <span class="token operator">=</span> OLD<span class="token punctuation">.</span>invoice_id<span class="token punctuation">;</span>
+
+<span class="token keyword">END</span> $$
+DELIMITTER <span class="token punctuation">;</span>
+
+
+<span class="token comment">-- test it by delete</span>
+<span class="token keyword">DELETE</span> <span class="token keyword">FROM</span> payments <span class="token keyword">WHERE</span> payment_id <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">--    TRIGGER FOR AUDITING mean tracking like logs remove, insert, update track data</span>
+
+<span class="token comment">-- CREATE TABLES</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> payments_audit<span class="token punctuation">(</span>
+	client_id <span class="token keyword">INT</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    <span class="token keyword">date</span> <span class="token keyword">DATE</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    amount <span class="token keyword">DECIMAL</span><span class="token punctuation">(</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    action_type <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    action_date <span class="token keyword">DATETIME</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+
+
+<span class="token comment">-- insert tracking data like logs</span>
+<span class="token keyword">DROP</span> <span class="token keyword">TRIGGER</span> <span class="token keyword">IF</span> <span class="token keyword">EXISTS</span> payments_after_insert<span class="token punctuation">;</span>
+
+<span class="token keyword">DELIMITER</span> $$
+<span class="token keyword">CREATE</span> <span class="token keyword">TRIGGER</span> payments_after_insert
+    <span class="token keyword">AFTER</span> <span class="token keyword">INSERT</span> <span class="token keyword">ON</span> payments
+    <span class="token keyword">FOR EACH ROW</span>
+<span class="token keyword">BEGIN</span>
+    <span class="token comment">-- right here any code</span>
+    <span class="token keyword">UPDATE</span> invoices
+    <span class="token keyword">SET</span> payment_total <span class="token operator">=</span> payment_total <span class="token operator">+</span> <span class="token comment">--NEW, OLD</span>
+    NEW<span class="token punctuation">.</span>amount
+    <span class="token keyword">WHERE</span> invoice_id <span class="token operator">=</span> NEW<span class="token punctuation">.</span>invoice_id<span class="token punctuation">;</span>
+
+    <span class="token comment">-- tracking auditing mean logs create</span>
+    <span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> payments_audit <span class="token keyword">VALUES</span><span class="token punctuation">(</span>NEW<span class="token punctuation">.</span>client_id<span class="token punctuation">,</span> NEW<span class="token punctuation">.</span><span class="token keyword">date</span><span class="token punctuation">,</span> NEW<span class="token punctuation">.</span>amount<span class="token punctuation">,</span> <span class="token string">'INSERT'</span><span class="token punctuation">,</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">END</span> $$
+DELIMITTER <span class="token punctuation">;</span>
+
+
+
+<span class="token comment">-- deleting data track like logs</span>
+ <span class="token keyword">DROP</span> <span class="token keyword">TRIGGER</span> <span class="token keyword">IF</span> <span class="token keyword">EXISTS</span> payments_after_delete<span class="token punctuation">;</span>
+<span class="token keyword">DELIMITER</span> $$
+
+<span class="token keyword">CREATE</span> <span class="token keyword">TRIGGER</span> payments_after_delete
+    <span class="token keyword">AFTER</span> <span class="token keyword">DELETE</span> <span class="token keyword">ON</span> payments
+    <span class="token keyword">FOR EACH ROW</span>
+<span class="token keyword">BEGIN</span>
+    <span class="token comment">-- right here any code</span>
+    <span class="token keyword">UPDATE</span> invoices
+    <span class="token keyword">SET</span> payment_total <span class="token operator">=</span> payment_total <span class="token operator">-</span> <span class="token comment">--NEW, OLD</span>
+    OLD<span class="token punctuation">.</span>amount
+    <span class="token keyword">WHERE</span> invoice_id <span class="token operator">=</span> OLD<span class="token punctuation">.</span>invoice_id<span class="token punctuation">;</span>
+
+      <span class="token comment">-- tracking auditing mean logs create</span>
+    <span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> payments_audit <span class="token keyword">VALUES</span><span class="token punctuation">(</span>OLD<span class="token punctuation">.</span>client_id<span class="token punctuation">,</span> OLD<span class="token punctuation">.</span><span class="token keyword">date</span><span class="token punctuation">,</span> OLD<span class="token punctuation">.</span>amount<span class="token punctuation">,</span> <span class="token string">'DELETE'</span><span class="token punctuation">,</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token keyword">END</span> $$
+DELIMITTER <span class="token punctuation">;</span>
+
+
+<span class="token comment">-- test it by  insert and delete by query</span>
+
+<span class="token keyword">DELETE</span> <span class="token keyword">FROM</span> payments <span class="token keyword">WHERE</span> payment_id <span class="token operator">=</span> <span class="token number">11</span><span class="token punctuation">;</span>
+
+
+</code></pre></div><h2 id="events"><a href="#events" class="header-anchor">#</a> Events</h2> <p>A task (or block of sql code) that gets
+executed according to a schedule..</p> <p>all variables of my sql <code>SHOW VARIABLES;</code></p> <p>by filter <code>SHOW VARIABLES LIKE 'event%';</code></p> <p>List of events <code>SHOW EVENTS;</code></p> <p>List of events <code>SHOW EVENTS LIKE 'yearly%'</code></p> <p>Remove Event <code>DROP EVENT IF EXISTS yearly_delete_audit_rows</code></p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token comment">-- on cron job in mysql</span>
+<span class="token keyword">SET</span> <span class="token keyword">GLOBAL</span> event_scheduler <span class="token operator">=</span> <span class="token string">'ON'</span><span class="token punctuation">;</span>
+<span class="token keyword">SET</span> <span class="token keyword">GLOBAL</span> event_scheduler <span class="token operator">=</span> <span class="token string">'OFF'</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- create event</span>
+
+<span class="token keyword">DELIMITER</span> $$
+
+<span class="token keyword">CREATE</span> EVENT yearly_delete_audit_rows
+<span class="token keyword">ON</span> SCHEDULE
+    <span class="token comment">-- AT '2019-01-01' once</span>
+    EVERY <span class="token number">1</span> <span class="token keyword">YEAR</span> STARTS <span class="token string">'2019-01-01'</span> ENDS <span class="token string">'2029-01-01'</span>
+<span class="token keyword">DO</span> <span class="token keyword">BEGIN</span>
+    <span class="token keyword">DELETE</span> <span class="token keyword">FROM</span> payements_audit
+    <span class="token keyword">WHERE</span> action_date <span class="token operator">&lt;</span> <span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token keyword">INTERVAL</span> <span class="token number">1</span> <span class="token keyword">YEAR</span><span class="token punctuation">;</span>
+
+<span class="token keyword">END</span> $$
+
+<span class="token keyword">DELIMITER</span> <span class="token punctuation">;</span>
+
+
+<span class="token comment">-- modify event</span>
+
+<span class="token keyword">DELIMITER</span> $$
+
+<span class="token keyword">ALTER</span> EVENT yearly_delete_audit_rows
+<span class="token keyword">ON</span> SCHEDULE
+    <span class="token comment">-- AT '2019-01-01' once</span>
+    EVERY <span class="token number">1</span> <span class="token keyword">YEAR</span> STARTS <span class="token string">'2019-01-01'</span> ENDS <span class="token string">'2029-01-01'</span>
+<span class="token keyword">DO</span> <span class="token keyword">BEGIN</span>
+    <span class="token keyword">DELETE</span> <span class="token keyword">FROM</span> payements_audit
+    <span class="token keyword">WHERE</span> action_date <span class="token operator">&lt;</span> <span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token keyword">INTERVAL</span> <span class="token number">1</span> <span class="token keyword">YEAR</span><span class="token punctuation">;</span>
+
+<span class="token keyword">END</span> $$
+
+<span class="token keyword">DELIMITER</span> <span class="token punctuation">;</span>
+
+<span class="token comment">-- enalble for desable event</span>
+
+<span class="token keyword">ALTER</span> EVENT yearly_delete_audit_rows <span class="token keyword">ENABLE</span><span class="token operator">/</span><span class="token keyword">DISABLE</span><span class="token punctuation">;</span>
+
+
+
+
+</code></pre></div><h2 id="transactions"><a href="#transactions" class="header-anchor">#</a> TRANSACTIONS</h2> <p>Type of transactions</p> <ul><li>Atomicity</li> <li>Consistency</li> <li>Isolation</li> <li>Durability</li></ul> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">USE</span> sql_store<span class="token punctuation">;</span>
+
+<span class="token keyword">START</span> <span class="token keyword">TRANSACTION</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> orders <span class="token punctuation">(</span>customer_id<span class="token punctuation">,</span> order_date<span class="token punctuation">,</span> <span class="token keyword">status</span><span class="token punctuation">)</span>
+<span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'2019-01-01'</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> order_items
+<span class="token keyword">VALUES</span><span class="token punctuation">(</span>LAST_INSERT_ID<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">--COMMIT;</span>
+<span class="token comment">--ROLLBACK;</span>
+
+<span class="token comment">-- CHECK SOME VARIABLES</span>
+<span class="token keyword">SHOW</span> VARIABLES <span class="token operator">LIKE</span> <span class="token string">'autocommit'</span><span class="token punctuation">;</span>
+
+
+</code></pre></div><h3 id="concurrentcy-and-locking"><a href="#concurrentcy-and-locking" class="header-anchor">#</a> Concurrentcy and Locking</h3> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">USE</span> sql_store<span class="token punctuation">;</span>
+
+<span class="token keyword">START</span> <span class="token keyword">TRANSACTION</span><span class="token punctuation">;</span>
+
+<span class="token keyword">UPDATE</span> customers
+<span class="token keyword">SET</span> points <span class="token operator">=</span> points <span class="token operator">+</span> <span class="token number">10</span>
+<span class="token keyword">WHERE</span> customer_id <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token keyword">COMMIT</span><span class="token punctuation">;</span>
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mysql/besic.html" class="prev">
+        Sql Besic
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.84ebb9eb.js" defer></script><script src="/assets/js/2.e4b52d1b.js" defer></script><script src="/assets/js/29.4fa4fe12.js" defer></script>
+  </body>
+</html>

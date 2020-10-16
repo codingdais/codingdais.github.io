@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sql Besic | CodingDais</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="Coding Dais is the best online web, mobile, game development, and programming tutorials for all of the latest web, mobile, game technologies including Node.js, Angular, React.js, Vue.js, Laravel, Django, Spring Boot, Php, Python, Javascript, Java, C# and much more">
+    <link rel="preload" href="/assets/css/0.styles.5bd6d4d0.css" as="style"><link rel="preload" href="/assets/js/app.84ebb9eb.js" as="script"><link rel="preload" href="/assets/js/2.e4b52d1b.js" as="script"><link rel="preload" href="/assets/js/30.caa58080.js" as="script"><link rel="preload" href="/assets/js/3.77ab59e8.js" as="script"><link rel="prefetch" href="/assets/js/10.f42cee4c.js"><link rel="prefetch" href="/assets/js/11.15f46172.js"><link rel="prefetch" href="/assets/js/12.75dc3d61.js"><link rel="prefetch" href="/assets/js/13.ee06b57c.js"><link rel="prefetch" href="/assets/js/14.29d0454a.js"><link rel="prefetch" href="/assets/js/15.8f0829ef.js"><link rel="prefetch" href="/assets/js/16.eabe6809.js"><link rel="prefetch" href="/assets/js/17.b9ab7599.js"><link rel="prefetch" href="/assets/js/18.a93cf3ef.js"><link rel="prefetch" href="/assets/js/19.c1b005d2.js"><link rel="prefetch" href="/assets/js/20.b423fd65.js"><link rel="prefetch" href="/assets/js/21.9c8f0b45.js"><link rel="prefetch" href="/assets/js/22.0f2ac89e.js"><link rel="prefetch" href="/assets/js/23.3527495a.js"><link rel="prefetch" href="/assets/js/24.8fab01d4.js"><link rel="prefetch" href="/assets/js/25.b8fe479a.js"><link rel="prefetch" href="/assets/js/26.f4465bac.js"><link rel="prefetch" href="/assets/js/27.b2b83392.js"><link rel="prefetch" href="/assets/js/28.0195b470.js"><link rel="prefetch" href="/assets/js/29.4fa4fe12.js"><link rel="prefetch" href="/assets/js/31.adb2b3f6.js"><link rel="prefetch" href="/assets/js/32.e0eff7c7.js"><link rel="prefetch" href="/assets/js/33.9f405cf8.js"><link rel="prefetch" href="/assets/js/34.652e182d.js"><link rel="prefetch" href="/assets/js/35.b6c0d94e.js"><link rel="prefetch" href="/assets/js/36.79e07b90.js"><link rel="prefetch" href="/assets/js/37.d35d4cb3.js"><link rel="prefetch" href="/assets/js/38.34096d55.js"><link rel="prefetch" href="/assets/js/39.d8201e6f.js"><link rel="prefetch" href="/assets/js/4.d822e318.js"><link rel="prefetch" href="/assets/js/5.ea1a8308.js"><link rel="prefetch" href="/assets/js/6.7de44b1d.js"><link rel="prefetch" href="/assets/js/7.a9823576.js"><link rel="prefetch" href="/assets/js/8.6b47d49c.js"><link rel="prefetch" href="/assets/js/9.4eec40e1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.5bd6d4d0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">CodingDais</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Clouds" class="dropdown-title"><span class="title">Clouds</span> <span class="arrow down"></span></button> <button type="button" aria-label="Clouds" class="mobile-dropdown-title"><span class="title">Clouds</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/aws/" class="nav-link">
+  Aws
+</a></li><li class="dropdown-item"><!----> <a href="/gcp/" class="nav-link">
+  Gcp
+</a></li><li class="dropdown-item"><!----> <a href="/digitalocean/" class="nav-link">
+  DigitalOcean
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Framework" class="dropdown-title"><span class="title">Framework</span> <span class="arrow down"></span></button> <button type="button" aria-label="Framework" class="mobile-dropdown-title"><span class="title">Framework</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  Other
+</a></li><li class="dropdown-item"><!----> <a href="/vuejs/" class="nav-link">
+  Vuejs
+</a></li><li class="dropdown-item"><!----> <a href="/reactjs/" class="nav-link">
+  Reactjs
+</a></li><li class="dropdown-item"><!----> <a href="/nuxtjs/" class="nav-link">
+  NuxtJs
+</a></li><li class="dropdown-item"><!----> <a href="/angular/" class="nav-link">
+  Angular
+</a></li><li class="dropdown-item"><!----> <a href="/reactnative/" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/deno/" class="nav-link">
+  Deno
+</a></li><li class="dropdown-item"><!----> <a href="/flutter/" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/laravel/" class="nav-link">
+  Laravel
+</a></li><li class="dropdown-item"><!----> <a href="/spring/" class="nav-link">
+  Spring
+</a></li><li class="dropdown-item"><!----> <a href="/django/" class="nav-link">
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/flusk/" class="nav-link">
+  Flusk
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/tailwind/" class="nav-link">
+  Tailwind
+</a></li><li class="dropdown-item"><!----> <a href="/php/" class="nav-link">
+  Php
+</a></li><li class="dropdown-item"><!----> <a href="/csharp/" class="nav-link">
+  Csharp
+</a></li><li class="dropdown-item"><!----> <a href="/python/" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/dart/" class="nav-link">
+  Dart
+</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link router-link-active">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/mongodb/" class="nav-link">
+  MongoDb
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tools" class="dropdown-title"><span class="title">Tools</span> <span class="arrow down"></span></button> <button type="button" aria-label="Tools" class="mobile-dropdown-title"><span class="title">Tools</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/#git-github" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#ssh-besic" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#docker" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#editors" class="nav-link">
+  Editors
+</a></li><li class="dropdown-item"><!----> <a href="/os/" class="nav-link">
+  Os
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#crome-extension" class="nav-link">
+  Crome Extension
+</a></li></ul></div></div><div class="nav-item"><a href="/contact.html" class="nav-link">
+  Contact
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Clouds" class="dropdown-title"><span class="title">Clouds</span> <span class="arrow down"></span></button> <button type="button" aria-label="Clouds" class="mobile-dropdown-title"><span class="title">Clouds</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/aws/" class="nav-link">
+  Aws
+</a></li><li class="dropdown-item"><!----> <a href="/gcp/" class="nav-link">
+  Gcp
+</a></li><li class="dropdown-item"><!----> <a href="/digitalocean/" class="nav-link">
+  DigitalOcean
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Framework" class="dropdown-title"><span class="title">Framework</span> <span class="arrow down"></span></button> <button type="button" aria-label="Framework" class="mobile-dropdown-title"><span class="title">Framework</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  Other
+</a></li><li class="dropdown-item"><!----> <a href="/vuejs/" class="nav-link">
+  Vuejs
+</a></li><li class="dropdown-item"><!----> <a href="/reactjs/" class="nav-link">
+  Reactjs
+</a></li><li class="dropdown-item"><!----> <a href="/nuxtjs/" class="nav-link">
+  NuxtJs
+</a></li><li class="dropdown-item"><!----> <a href="/angular/" class="nav-link">
+  Angular
+</a></li><li class="dropdown-item"><!----> <a href="/reactnative/" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/deno/" class="nav-link">
+  Deno
+</a></li><li class="dropdown-item"><!----> <a href="/flutter/" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/laravel/" class="nav-link">
+  Laravel
+</a></li><li class="dropdown-item"><!----> <a href="/spring/" class="nav-link">
+  Spring
+</a></li><li class="dropdown-item"><!----> <a href="/django/" class="nav-link">
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/flusk/" class="nav-link">
+  Flusk
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/tailwind/" class="nav-link">
+  Tailwind
+</a></li><li class="dropdown-item"><!----> <a href="/php/" class="nav-link">
+  Php
+</a></li><li class="dropdown-item"><!----> <a href="/csharp/" class="nav-link">
+  Csharp
+</a></li><li class="dropdown-item"><!----> <a href="/python/" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/dart/" class="nav-link">
+  Dart
+</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link router-link-active">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/mongodb/" class="nav-link">
+  MongoDb
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tools" class="dropdown-title"><span class="title">Tools</span> <span class="arrow down"></span></button> <button type="button" aria-label="Tools" class="mobile-dropdown-title"><span class="title">Tools</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/#git-github" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#ssh-besic" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#docker" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#editors" class="nav-link">
+  Editors
+</a></li><li class="dropdown-item"><!----> <a href="/os/" class="nav-link">
+  Os
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#crome-extension" class="nav-link">
+  Crome Extension
+</a></li></ul></div></div><div class="nav-item"><a href="/contact.html" class="nav-link">
+  Contact
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/mysql/" aria-current="page" class="sidebar-link">Sql</a></li><li><a href="/mysql/besic.html" aria-current="page" class="active sidebar-link">Sql Besic</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/mysql/besic.html#sql-besic" class="sidebar-link">Sql Besic</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#select-db" class="sidebar-link">Select db</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#select" class="sidebar-link">Select *</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#as" class="sidebar-link">As</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#distinct" class="sidebar-link">DISTINCT</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#group-by" class="sidebar-link">Group by</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#where" class="sidebar-link">Where</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#and-operator" class="sidebar-link">And Operator</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#or-operator" class="sidebar-link">OR Operator</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#where-not" class="sidebar-link">Where not</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#in-not-in-operator" class="sidebar-link">IN, NOT IN Operator</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#between-operators" class="sidebar-link">BETWEEN Operators</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#like-not-like-operators" class="sidebar-link">LIKE. NOT LIKE Operators</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#regexp-same-like-like" class="sidebar-link">REGEXP same like LIKE</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#is-null-is-not-null" class="sidebar-link">IS NULL, IS NOT NULL</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#order-by" class="sidebar-link">Order by</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#limit" class="sidebar-link">LIMIT</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#inner-join" class="sidebar-link">INNER JOIN</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#joining-across-database" class="sidebar-link">JOINING ACROSS DATABASE</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#self-join" class="sidebar-link">SELF JOIN</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#multple-join" class="sidebar-link">Multple join</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#compound-join-conditions" class="sidebar-link">COMPOUND JOIN CONDITIONS</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#implicit-join" class="sidebar-link">IMPLICIT JOIN</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#outer-join" class="sidebar-link">OUTER JOIN</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#self-outer-join" class="sidebar-link">SELF OUTER JOIN</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#using-clause" class="sidebar-link">USING CLAUSE</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#natural-join" class="sidebar-link">NATURAL JOIN</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#cross-join" class="sidebar-link">CROSS JOIN</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#unions" class="sidebar-link">UNIONS</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#insert-row" class="sidebar-link">INSERT ROW</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#create-a-copy-of-a-table" class="sidebar-link">CREATE A COPY OF A TABLE</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#update-a-single-row" class="sidebar-link">UPDATE A SINGLE ROW</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#sub-queries" class="sidebar-link">SUB QUERIES</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#delete" class="sidebar-link">DELETE</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#aggregate-functions" class="sidebar-link">Aggregate functions</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#group-by-2" class="sidebar-link">Group by</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#having" class="sidebar-link">Having</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#rollup" class="sidebar-link">Rollup</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#subqueries" class="sidebar-link">SUBQUERIES</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#all" class="sidebar-link">ALL</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#any" class="sidebar-link">ANY</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#exists-operator" class="sidebar-link">EXISTS OPERATOR</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#subqueries-in-the-select-clause" class="sidebar-link">SUBQUERIES IN THE SELECT CLAUSE</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#subqueries-in-the-from" class="sidebar-link">SUBQUERIES IN THE FROM</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#functions" class="sidebar-link">Functions</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#ifnull-and-coalesce" class="sidebar-link">IFNULL and COALESCE</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#if-function" class="sidebar-link">IF FUNCTION</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#case-operator" class="sidebar-link">CASE OPERATOR</a></li><li class="sidebar-sub-header"><a href="/mysql/besic.html#views" class="sidebar-link">Views</a></li></ul></li><li><a href="/mysql/advance.html" class="sidebar-link">Sql Advance</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="sql-besic"><a href="#sql-besic" class="header-anchor">#</a> Sql Besic</h2> <h2 id="select-db"><a href="#select-db" class="header-anchor">#</a> Select db</h2> <p>Select database <code>use databasename;</code></p> <div class="language-sql extra-class"><pre class="language-sql"><code>    <span class="token keyword">use</span> eloquent<span class="token punctuation">;</span>
+</code></pre></div><h2 id="select"><a href="#select" class="header-anchor">#</a> Select *</h2> <h3 id="select-all-fields"><a href="#select-all-fields" class="header-anchor">#</a> Select all fields</h3> <p><code>Select all fields</code></p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">use</span> eloquent<span class="token punctuation">;</span> <span class="token comment">-- we selected eloquent db</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> users<span class="token punctuation">;</span> <span class="token comment">-- * mean select all users</span>
+
+</code></pre></div><p>Output</p> <table><thead><tr><th>FirstName</th> <th style="text-align:center;">LastName</th> <th style="text-align:right;">Email</th></tr></thead> <tbody><tr><td>Rohan</td> <td style="text-align:center;">Dhiman</td> <td style="text-align:right;">rohanvfx15@gmail.com</td></tr> <tr><td>Nisha</td> <td style="text-align:center;">Dhiman</td> <td style="text-align:right;">nishadhiman@gmail.com</td></tr></tbody></table> <h3 id="select-only-some-fields"><a href="#select-only-some-fields" class="header-anchor">#</a> Select only some fields</h3> <p>Select only <code>name, email</code> fields</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">use</span> eloquent<span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> name<span class="token punctuation">,</span> email <span class="token comment">-- select only name and email</span>
+<span class="token keyword">FROM</span> users
+
+</code></pre></div><p>Output</p> <table><thead><tr><th>FirstName</th> <th style="text-align:right;">Email</th></tr></thead> <tbody><tr><td>Rohan</td> <td style="text-align:right;">rohanvfx15@gmail.com</td></tr> <tr><td>Nisha</td> <td style="text-align:right;">nishadhiman@gmail.com</td></tr></tbody></table> <h3 id="select-query-using-with-expression"><a href="#select-query-using-with-expression" class="header-anchor">#</a> Select query using with expression</h3> <p>expression with select query <code>+-/\* %</code></p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> last_name<span class="token punctuation">,</span> first_name<span class="token punctuation">,</span> points<span class="token punctuation">,</span> points <span class="token operator">*</span> <span class="token number">10</span>  <span class="token operator">+</span> <span class="token number">10</span> <span class="token comment">-- we 10 plus in point</span>
+
+</code></pre></div><h2 id="as"><a href="#as" class="header-anchor">#</a> As</h2> <p><code>As</code> help us change field name</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> last_name<span class="token punctuation">,</span> first_name<span class="token punctuation">,</span> points<span class="token punctuation">,</span> points <span class="token operator">*</span> <span class="token number">10</span>  <span class="token operator">+</span> <span class="token number">10</span> <span class="token keyword">AS</span> discount <span class="token comment">-- as help us change name of column mean alias</span>
+
+<span class="token keyword">SELECT</span> last_name<span class="token punctuation">,</span> first_name<span class="token punctuation">,</span> points<span class="token punctuation">,</span> points <span class="token operator">*</span> <span class="token number">10</span>  <span class="token operator">+</span> <span class="token number">10</span> <span class="token keyword">AS</span> <span class="token string">&quot;discount order&quot;</span> <span class="token comment">-- Quotes help us name set with space</span>
+<span class="token keyword">from</span> customers
+
+</code></pre></div><p>Output</p> <table><thead><tr><th>LastName</th> <th style="text-align:center;">FirstName</th> <th style="text-align:right;">Points</th> <th>point + 10</th></tr></thead> <tbody><tr><td>Dhiman</td> <td style="text-align:center;">Rohan</td> <td style="text-align:right;">100</td> <td>110</td></tr> <tr><td>Dhiman</td> <td style="text-align:center;">Nisha</td> <td style="text-align:right;">120</td> <td>130</td></tr></tbody></table> <h2 id="distinct"><a href="#distinct" class="header-anchor">#</a> DISTINCT</h2> <p><code>DISTINCT</code> help us select unique column one problem only work one column you can't print multiple column mean stop duplicate</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> <span class="token keyword">DISTINCT</span> points  <span class="token keyword">FROM</span> <span class="token punctuation">`</span>customers<span class="token punctuation">`</span>
+
+</code></pre></div><table><thead><tr><th style="text-align:right;">Points</th></tr></thead> <tbody><tr><td style="text-align:right;">100</td></tr> <tr><td style="text-align:right;">120</td></tr></tbody></table> <h2 id="group-by"><a href="#group-by" class="header-anchor">#</a> Group by</h2> <p><code>Group by</code> select only points unique value help us stop duplicate
+you will also get all column same work like DISTINCT</p> <p>Output</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> <span class="token punctuation">`</span>customers<span class="token punctuation">`</span> <span class="token keyword">GROUP</span> <span class="token keyword">BY</span> points
+
+</code></pre></div><p>Output</p> <table><thead><tr><th>LastName</th> <th style="text-align:center;">FirstName</th> <th style="text-align:right;">Points</th></tr></thead> <tbody><tr><td>Dhiman</td> <td style="text-align:center;">Rohan</td> <td style="text-align:right;">100</td></tr> <tr><td>Dhiman</td> <td style="text-align:center;">Nisha</td> <td style="text-align:right;">120</td></tr></tbody></table> <h2 id="where"><a href="#where" class="header-anchor">#</a> Where</h2> <h3 id="symbals"><a href="#symbals" class="header-anchor">#</a> Symbals</h3> <blockquote><p>&gt; greater than <br>
+=&gt; greater than equal <br> &gt; &lt; less than <br>
+=&lt; less than equal <br>
+= equal <br>
+!= not equal <br> &gt; &lt;&gt; equal <br></p></blockquote> <p>one thousand se jydada</p> <p><code>Where points &gt; 1000</code> Clause</p> <p>one thousand se kam
+<code>Where points &lt; 1000</code> Clause</p> <p>if condition
+zero se jyada mean agr data hai to show ho
+<code>Where points &gt; 0</code> Clause</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">use</span> eloquent<span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> users
+<span class="token keyword">WHERE</span> points <span class="token operator">&gt;</span> <span class="token number">1000</span><span class="token punctuation">;</span>
+
+</code></pre></div><h2 id="and-operator"><a href="#and-operator" class="header-anchor">#</a> And Operator</h2> <p>and mean second where condition both condition should be true</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">use</span> eloquent<span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> users
+<span class="token keyword">WHERE</span> points <span class="token operator">&gt;</span> <span class="token number">1000</span> <span class="token operator">and</span> born <span class="token operator">=</span> <span class="token number">1993</span><span class="token punctuation">;</span>
+
+</code></pre></div><h2 id="or-operator"><a href="#or-operator" class="header-anchor">#</a> OR Operator</h2> <p>or mean second where condition both condition have atlest should be one true</p> <div class="language-sql extra-class"><pre class="language-sql"><code>
+<span class="token comment">-- AND,</span>
+<span class="token comment">-- OR</span>
+<span class="token comment">-- high order and second or first condition will run and codition</span>
+<span class="token comment">-- we change order by prathenc ()</span>
+
+<span class="token keyword">use</span> eloquent<span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> users
+<span class="token keyword">WHERE</span> points <span class="token operator">&gt;</span> <span class="token number">1000</span> <span class="token operator">or</span> born <span class="token operator">=</span> <span class="token number">1993</span><span class="token punctuation">;</span>
+
+<span class="token keyword">use</span> eloquent<span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> users
+<span class="token keyword">WHERE</span> points <span class="token operator">&gt;</span> <span class="token number">1000</span> <span class="token operator">or</span> born <span class="token operator">=</span> <span class="token number">1993</span> <span class="token operator">AND</span> state <span class="token string">'haryana'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">use</span> eloquent<span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> users
+<span class="token keyword">WHERE</span> points <span class="token operator">&gt;</span> <span class="token number">1000</span> <span class="token operator">or</span> <span class="token punctuation">(</span>born <span class="token operator">=</span> <span class="token number">1993</span> <span class="token operator">AND</span> state <span class="token string">'haryana'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><h2 id="where-not"><a href="#where-not" class="header-anchor">#</a> Where not</h2> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> users
+<span class="token comment">-- both where same</span>
+<span class="token keyword">WHERE</span> <span class="token operator">NOT</span> <span class="token punctuation">(</span>points <span class="token operator">&gt;</span> <span class="token number">1000</span> <span class="token operator">OR</span> born <span class="token operator">&gt;</span> <span class="token number">1993</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">-- WHERE (points &lt;= 1000 AND born &lt;= 1993 ); Not operator convert code in this manner</span>
+
+
+<span class="token comment">-- exercise exm</span>
+
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> orders
+<span class="token keyword">WHERE</span> order_id <span class="token operator">=</span> <span class="token number">6</span> <span class="token operator">AND</span> unit_price <span class="token operator">*</span> quantiy <span class="token operator">&gt;</span> <span class="token number">30</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="in-not-in-operator"><a href="#in-not-in-operator" class="header-anchor">#</a> IN, NOT IN Operator</h2> <p>select multiple</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">Select</span> <span class="token operator">*</span> customers
+<span class="token comment">-- WHERE state = 'haryana' or state = 'punjab' or state = 'karnataka'</span>
+
+<span class="token keyword">WHERE</span> state <span class="token operator">IN</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token string">'haryana'</span><span class="token punctuation">,</span> <span class="token string">'punjab'</span><span class="token punctuation">,</span> <span class="token string">'karnataka'</span><span class="token punctuation">)</span>
+<span class="token keyword">WHERE</span> state <span class="token operator">NOT</span> <span class="token operator">IN</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token string">'haryana'</span><span class="token punctuation">,</span> <span class="token string">'punjab'</span><span class="token punctuation">,</span> <span class="token string">'karnataka'</span><span class="token punctuation">)</span>
+
+<span class="token comment">-- write query which product never order</span>
+
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> product
+<span class="token keyword">WHERE</span> product_id <span class="token operator">NOT</span> <span class="token operator">IN</span> <span class="token punctuation">(</span>
+    <span class="token keyword">SELECT</span> <span class="token keyword">DISTINCT</span> product_id <span class="token comment">-- DISTINCT stop duplicate id</span>
+    <span class="token keyword">FROM</span> order_items
+<span class="token punctuation">)</span>
+
+<span class="token comment">-- same result with join its litle bit hard</span>
+
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> product
+<span class="token keyword">LEFT</span> <span class="token keyword">JOIN</span> order_items <span class="token keyword">USING</span><span class="token punctuation">(</span>product_id<span class="token punctuation">)</span>
+<span class="token keyword">WHERE</span> product_id <span class="token operator">IS</span> <span class="token boolean">NULL</span>
+
+</code></pre></div><h2 id="between-operators"><a href="#between-operators" class="header-anchor">#</a> BETWEEN Operators</h2> <div class="language-sql extra-class"><pre class="language-sql"><code>   <span class="token keyword">Select</span> <span class="token operator">*</span> customers
+   <span class="token comment">-- BOTH ARE euqal</span>
+  <span class="token comment">-- WHERE points &gt;= 1000 and points &lt;= 3000;</span>
+   <span class="token keyword">WHERE</span> points <span class="token operator">BETWEEN</span> <span class="token number">1000</span> <span class="token operator">and</span> <span class="token number">3000</span><span class="token punctuation">;</span>
+
+</code></pre></div><h2 id="like-not-like-operators"><a href="#like-not-like-operators" class="header-anchor">#</a> LIKE. NOT LIKE Operators</h2> <div class="language-sql extra-class"><pre class="language-sql"><code>   <span class="token keyword">Select</span> <span class="token operator">*</span> customers
+   <span class="token keyword">WHERE</span> first_name <span class="token operator">LIKE</span> <span class="token string">'n%'</span><span class="token punctuation">;</span> <span class="token comment">-- first latter should n after that any latter it does matter lower case or uppparcase N</span>
+
+   <span class="token keyword">WHERE</span> first_name <span class="token operator">LIKE</span> <span class="token string">'%b%'</span><span class="token punctuation">;</span> <span class="token comment">-- mean first any latter and in last any latter but in between b should be present latter</span>
+
+     <span class="token keyword">WHERE</span> first_name <span class="token operator">LIKE</span> <span class="token string">'%b'</span><span class="token punctuation">;</span> <span class="token comment">-- any word in first but y latter should be in end</span>
+
+     <span class="token keyword">WHERE</span> first_name <span class="token operator">NOT</span> <span class="token operator">LIKE</span> <span class="token string">'%b'</span><span class="token punctuation">;</span> <span class="token comment">-- any word in first but y latter should NOT be in end</span>
+
+    <span class="token keyword">WHERE</span> first_name <span class="token operator">LIKE</span> <span class="token string">'___y'</span><span class="token punctuation">;</span> <span class="token comment">-- first four character anything y should be in last _ underscore single character any</span>
+
+</code></pre></div><h2 id="regexp-same-like-like"><a href="#regexp-same-like-like" class="header-anchor">#</a> REGEXP same like LIKE</h2> <p><code>rohan =&gt; same like %rohan%</code> <code>^ =&gt; ^rohan =&gt; begning in string</code> rohan totally match
+<code>$ =&gt; rohan$ =&gt; end in string</code> last me rohan match hona chahiye
+<code>| logical or =&gt;rohan|nisha|akshita =&gt; multple search</code> same like %rohan% %nisha%
+<code>^rohan|nisha|akshita =&gt; multple search</code> first name start with rohan either nisha either akshita</p> <p><code>rohan$|nisha|akshita =&gt; multple search</code> first name end with rohan either nisha either akshita</p> <p><code>[]</code> bracket match any single character inside bracket
+<code>[a-z]</code> hypen represent a to z character
+<code>[gim]e =&gt; match ge, ie, me</code> in the character
+<code>[a-h]e =&gt; match ae, be, ce, de ee fe ge he</code> in the character atoh
+<code>e[fmg] =&gt; match ef, em, eg</code> in the character</p> <div class="language-sql extra-class"><pre class="language-sql"><code>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> <span class="token punctuation">`</span>users<span class="token punctuation">`</span>
+<span class="token comment">-- both are same</span>
+<span class="token comment">--where first_name LIKE &quot;%so%;</span>
+<span class="token keyword">where</span> first_name <span class="token operator">REGEXP</span> <span class="token string">&quot;so&quot;</span><span class="token punctuation">;</span>
+
+</code></pre></div><h2 id="is-null-is-not-null"><a href="#is-null-is-not-null" class="header-anchor">#</a> IS NULL, IS NOT NULL</h2> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> users <span class="token keyword">WHERE</span> phones <span class="token operator">IS</span> <span class="token boolean">NULL</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> users <span class="token keyword">WHERE</span> phones <span class="token operator">IS</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="order-by"><a href="#order-by" class="header-anchor">#</a> Order by <span class="badge tip" style="vertical-align:top;" data-v-6cc65674>stable</span> <span class="badge warning" style="vertical-align:top;" data-v-6cc65674>beta</span> <span class="badge tip" style="vertical-align:top;" data-v-6cc65674>default theme</span></h2> <p><code>Order by</code> clause</p> <div class="language-sql extra-class"><pre class="language-sql"><code>
+<span class="token keyword">use</span> eloquent<span class="token punctuation">;</span>
+
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> users
+<span class="token comment">--ORDER BY first_name; BY DEFAULT ASC</span>
+<span class="token comment">--ORDER BY first_name DESC</span>
+<span class="token comment">--ORDER BY first_name, phones DESC -- multiple desc</span>
+<span class="token keyword">ORDER</span> <span class="token keyword">BY</span> first_name <span class="token keyword">DESC</span><span class="token punctuation">,</span> phones <span class="token keyword">ASC</span> <span class="token comment">-- multiple desc</span>
+
+<span class="token keyword">SELECT</span> <span class="token operator">*</span><span class="token punctuation">,</span> quantity <span class="token operator">*</span> discount <span class="token keyword">as</span> total_price <span class="token keyword">FROM</span> orders
+<span class="token keyword">WHERE</span> order_id <span class="token operator">=</span> <span class="token number">2</span>
+<span class="token keyword">ORDER</span> <span class="token keyword">BY</span> total_price <span class="token keyword">DESC</span><span class="token punctuation">;</span> <span class="token comment">-- expression and alias by order by</span>
+
+
+</code></pre></div><h2 id="limit"><a href="#limit" class="header-anchor">#</a> LIMIT</h2> <p>select limit rows</p> <div class="language-sql extra-class"><pre class="language-sql"><code>    <span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> customers
+    <span class="token keyword">LIMIT</span> <span class="token number">3</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="limit-with-pagination"><a href="#limit-with-pagination" class="header-anchor">#</a> LIMIT with pagination</h3> <p>Page 1: 1 - 3
+Page 2: 4 - 6
+Page 3: 7 - 9</p> <div class="language-sql extra-class"><pre class="language-sql"><code>    <span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> customers
+    <span class="token keyword">LIMIT</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">3</span> <span class="token comment">-- skip 6 record picked 3 record</span>
+
+
+</code></pre></div><h2 id="inner-join"><a href="#inner-join" class="header-anchor">#</a> INNER JOIN</h2> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> first_name<span class="token punctuation">,</span> last_name<span class="token punctuation">,</span> orders<span class="token punctuation">.</span>customer_id<span class="token punctuation">,</span>
+<span class="token keyword">FROM</span> customers
+<span class="token comment">-- INNER JOIN</span>
+<span class="token keyword">JOIN</span> customers <span class="token comment">-- inner join optional use kro na kro</span>
+<span class="token keyword">ON</span> orders<span class="token punctuation">.</span>customer_id <span class="token operator">=</span> customers<span class="token punctuation">.</span>customer_id <span class="token comment">-- on like where</span>
+
+</code></pre></div><h2 id="joining-across-database"><a href="#joining-across-database" class="header-anchor">#</a> JOINING ACROSS DATABASE</h2> <p>mean We can also select another db and join table that db</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> first_name<span class="token punctuation">,</span> last_name<span class="token punctuation">,</span> orders<span class="token punctuation">.</span>customer_id<span class="token punctuation">,</span>
+<span class="token keyword">FROM</span> customers
+<span class="token keyword">JOIN</span> myotherdbname<span class="token punctuation">.</span>customers <span class="token comment">-- inner join optional use kro na kro</span>
+<span class="token keyword">ON</span> orders<span class="token punctuation">.</span>customer_id <span class="token operator">=</span> myotherdbname<span class="token punctuation">.</span>customers<span class="token punctuation">.</span>customer_id <span class="token comment">-- on like where</span>
+
+<span class="token comment">-- with alias db name</span>
+<span class="token keyword">JOIN</span> myotherdbname<span class="token punctuation">.</span>customers c<span class="token comment">-- inner join optional use kro na kro</span>
+<span class="token keyword">ON</span> orders<span class="token punctuation">.</span>customer_id <span class="token operator">=</span> c<span class="token punctuation">.</span>customer_id <span class="token comment">-- on</span>
+
+
+</code></pre></div><h2 id="self-join"><a href="#self-join" class="header-anchor">#</a> SELF JOIN</h2> <p>Self join mean same join only different one table we use join</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> <span class="token operator">*</span>
+<span class="token keyword">FROM</span> employees e
+<span class="token keyword">JOIN</span> employees m
+<span class="token keyword">ON</span> e<span class="token punctuation">.</span>manager_id <span class="token operator">=</span> m<span class="token punctuation">.</span>employee_id
+
+
+<span class="token keyword">SELECT</span> e<span class="token punctuation">.</span>first_name <span class="token keyword">as</span> <span class="token string">'emp name'</span> <span class="token punctuation">,</span> m<span class="token punctuation">.</span>first_name <span class="token keyword">as</span> <span class="token string">'manager name'</span>
+<span class="token keyword">FROM</span> employees e
+<span class="token keyword">JOIN</span> employees m
+<span class="token keyword">ON</span> e<span class="token punctuation">.</span>manager_id <span class="token operator">=</span> m<span class="token punctuation">.</span>employee_id
+
+</code></pre></div><h2 id="multple-join"><a href="#multple-join" class="header-anchor">#</a> Multple join</h2> <div class="language-sql extra-class"><pre class="language-sql"><code>    <span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> orders o
+    <span class="token keyword">JOIN</span> customers c
+        <span class="token keyword">ON</span> o<span class="token punctuation">.</span>customer_id <span class="token operator">=</span> c<span class="token punctuation">.</span>customer_id
+    <span class="token keyword">JOIN</span> order_status os
+        <span class="token keyword">ON</span> o<span class="token punctuation">.</span><span class="token keyword">status</span> <span class="token operator">=</span> os<span class="token punctuation">.</span>order_status_id
+</code></pre></div><h2 id="compound-join-conditions"><a href="#compound-join-conditions" class="header-anchor">#</a> COMPOUND JOIN CONDITIONS</h2> <p>Mean two column match exmple product_id, user_id like this</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> order_items os
+<span class="token keyword">JOIN</span> order_item_notes oin
+    <span class="token keyword">ON</span> oi<span class="token punctuation">.</span>order_id <span class="token operator">=</span> oin<span class="token punctuation">.</span>order_id
+    <span class="token operator">AND</span> oi<span class="token punctuation">.</span>product_id <span class="token operator">=</span> oin<span class="token punctuation">.</span>product_id
+
+</code></pre></div><h2 id="implicit-join"><a href="#implicit-join" class="header-anchor">#</a> IMPLICIT JOIN</h2> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token comment">-- both query same</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> orders o
+<span class="token keyword">JOIN</span> customers c
+<span class="token keyword">ON</span> o<span class="token punctuation">.</span>customer_id <span class="token operator">=</span> c<span class="token punctuation">.</span>customer_id
+
+<span class="token comment">-- IMPLICIT JOIN above query in IMPLICIT join</span>
+
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> orders o<span class="token punctuation">,</span> customers c
+<span class="token keyword">WHERE</span> <span class="token keyword">ON</span> o<span class="token punctuation">.</span>customer_id <span class="token operator">=</span> c<span class="token punctuation">.</span>customer_id<span class="token punctuation">;</span>
+
+</code></pre></div><h2 id="outer-join"><a href="#outer-join" class="header-anchor">#</a> OUTER JOIN</h2> <p>We have two type of join inner join and outer join</p> <p>Outer join have two properties Left Join and Right Join
+left join orders =&gt; work left join work with from tablename
+right join orders =&gt; work right join with right join tablename</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token comment">--left join</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> customers c <span class="token comment">-- LEFT JOIN WORK customer</span>
+<span class="token keyword">LEFT</span> <span class="token keyword">JOIN</span>  orders o
+<span class="token keyword">ON</span> o<span class="token punctuation">.</span>customer_id <span class="token operator">=</span> c<span class="token punctuation">.</span>customer_id <span class="token comment">--weather true or false</span>
+
+
+<span class="token comment">-- why use left join suppose we are printing customers list with order table first two customers did not order anything in this case customers table order will show null</span>
+
+<span class="token comment">--right join</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> customers c
+<span class="token keyword">RIGHT</span> <span class="token keyword">JOIN</span>  orders o <span class="token comment">-- RIGHT JOIN WORK orders</span>
+<span class="token keyword">ON</span> o<span class="token punctuation">.</span>customer_id <span class="token operator">=</span> c<span class="token punctuation">.</span>customer_id <span class="token comment">--weather true or false</span>
+
+<span class="token comment">-- right join orders table customer_id match hogi vahi customers list aayegi same work innner join</span>
+
+
+<span class="token comment">-- multiple outer join</span>
+
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> customers c <span class="token comment">-- LEFT JOIN WORK customer</span>
+<span class="token keyword">LEFT</span> <span class="token keyword">JOIN</span>  orders o
+<span class="token keyword">ON</span> o<span class="token punctuation">.</span>customer_id <span class="token operator">=</span> c<span class="token punctuation">.</span>customer_id <span class="token comment">-- weather true or false</span>
+<span class="token keyword">LEFT</span> <span class="token keyword">JOIN</span>  shippers sh
+<span class="token keyword">ON</span> o<span class="token punctuation">.</span>shipper_id <span class="token operator">=</span> sh<span class="token punctuation">.</span>shipper_id <span class="token comment">-- weather true or false</span>
+
+<span class="token comment">-- we can't use inner join because shippers also null</span>
+
+
+</code></pre></div><h2 id="self-outer-join"><a href="#self-outer-join" class="header-anchor">#</a> SELF OUTER JOIN</h2> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token comment">-- why we need left join here because if manager have selft id that table will be null</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span>
+<span class="token keyword">FROM</span> employees e
+<span class="token keyword">LEFT</span> <span class="token keyword">JOIN</span> employees m
+<span class="token keyword">ON</span> e<span class="token punctuation">.</span>manager_id <span class="token operator">=</span> m<span class="token punctuation">.</span>employee_id
+
+</code></pre></div><h2 id="using-clause"><a href="#using-clause" class="header-anchor">#</a> USING CLAUSE</h2> <div class="language-sql extra-class"><pre class="language-sql"><code>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span>
+<span class="token keyword">FROM</span> customers c
+<span class="token keyword">LEFT</span> <span class="token keyword">JOIN</span> orders o
+<span class="token comment">-- ON c.customer_id = o.customer_id (if both table customer_id same we can use blow method)</span>
+<span class="token keyword">USING</span><span class="token punctuation">(</span>customer_id<span class="token punctuation">)</span> <span class="token comment">-- both query same</span>
+
+
+<span class="token comment">-- one more example</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> order_items oi
+<span class="token keyword">JOIN</span> order_item_notes oin
+<span class="token keyword">ON</span> oi<span class="token punctuation">.</span>order_id <span class="token operator">=</span> oin<span class="token punctuation">.</span>order_id <span class="token comment">-- same both name</span>
+<span class="token operator">AND</span> io<span class="token punctuation">.</span>product_id <span class="token operator">=</span> oin<span class="token punctuation">.</span>product_id <span class="token comment">-- same both name</span>
+
+<span class="token comment">-- convert above code in because query</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> order_items oi
+<span class="token keyword">JOIN</span> order_item_notes oin
+<span class="token keyword">USING</span><span class="token punctuation">(</span>order_id<span class="token punctuation">,</span> product_id<span class="token punctuation">)</span>
+
+<span class="token comment">-- one more example</span>
+
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> payments p
+<span class="token keyword">JOIN</span> clients c <span class="token keyword">USING</span><span class="token punctuation">(</span>client_id<span class="token punctuation">)</span> <span class="token comment">-- both query column same</span>
+<span class="token keyword">JOIN</span> payment_methods pm
+<span class="token keyword">ON</span> p<span class="token punctuation">.</span>payment_method <span class="token operator">=</span> pm<span class="token punctuation">.</span>payment_method_id <span class="token comment">-- both are not same</span>
+
+</code></pre></div><h2 id="natural-join"><a href="#natural-join" class="header-anchor">#</a> NATURAL JOIN</h2> <p>Don't use offent because this join automatic guess join</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> orders o
+<span class="token keyword">NATURAL</span> <span class="token keyword">JOIN</span> customers c
+
+</code></pre></div><h2 id="cross-join"><a href="#cross-join" class="header-anchor">#</a> CROSS JOIN</h2> <p>NO CONDITION INSIDE THIS JOIN</p> <p>when we use it
+jab aap company ki names print karava rhe aap chahate ho use
+employee bhi print ho use case me use kar skte ho.</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span>
+c<span class="token punctuation">.</span>first_name <span class="token keyword">as</span> customer<span class="token punctuation">,</span>
+p<span class="token punctuation">.</span>name <span class="token keyword">as</span> product
+<span class="token keyword">FROM</span> customers c
+<span class="token keyword">CROSS</span> <span class="token keyword">JOIN</span> products p
+
+<span class="token comment">-- another way using cross join</span>
+
+<span class="token keyword">SELECT</span>
+c<span class="token punctuation">.</span>first_name <span class="token keyword">as</span> customer<span class="token punctuation">,</span>
+p<span class="token punctuation">.</span>name <span class="token keyword">as</span> product
+<span class="token keyword">FROM</span> customers c<span class="token punctuation">,</span> products p
+
+
+</code></pre></div><h2 id="unions"><a href="#unions" class="header-anchor">#</a> UNIONS</h2> <p>Unions help us two query merge into one query</p> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>both query should have same parameter ex order_id, order_date, status both query should same params</p></div> <div class="language-sql extra-class"><pre class="language-sql"><code>   <span class="token keyword">SELECT</span> order_id<span class="token punctuation">,</span> order_date<span class="token punctuation">,</span>
+   <span class="token string">'active'</span> <span class="token keyword">as</span> <span class="token keyword">status</span> <span class="token keyword">FROM</span> <span class="token punctuation">`</span>orders<span class="token punctuation">`</span>
+    <span class="token keyword">WHERE</span> order_date <span class="token operator">&gt;=</span> <span class="token string">'2019-01-01'</span>
+
+    <span class="token keyword">UNION</span>
+
+     <span class="token keyword">SELECT</span> order_id<span class="token punctuation">,</span> order_date<span class="token punctuation">,</span>
+   <span class="token string">'deactive'</span> <span class="token keyword">as</span> <span class="token keyword">status</span> <span class="token keyword">FROM</span> <span class="token punctuation">`</span>orders<span class="token punctuation">`</span>
+    <span class="token keyword">WHERE</span> order_date <span class="token operator">&lt;</span> <span class="token string">'2019-01-01'</span><span class="token punctuation">;</span>
+
+</code></pre></div><p>PK Primary Key
+NN Not Null
+AI Auto Increament we use it with Primary key</p> <h2 id="insert-row"><a href="#insert-row" class="header-anchor">#</a> INSERT ROW</h2> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token comment">--INSERT INTO customers() values()</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> customers<span class="token punctuation">(</span>
+    last_name<span class="token punctuation">,</span>
+    first_name<span class="token punctuation">,</span>
+    birth_date<span class="token punctuation">,</span>
+    address<span class="token punctuation">,</span>
+    city<span class="token punctuation">,</span>
+    state
+<span class="token punctuation">)</span> <span class="token keyword">values</span><span class="token punctuation">(</span>
+    <span class="token string">'dhiman'</span><span class="token punctuation">,</span>
+    <span class="token string">'rohan'</span><span class="token punctuation">,</span>
+    <span class="token string">'1990-01-01'</span><span class="token punctuation">,</span>
+    <span class="token string">'address'</span><span class="token punctuation">,</span>
+    <span class="token string">'chd'</span><span class="token punctuation">,</span>
+    <span class="token string">'ch'</span>
+<span class="token punctuation">)</span>
+
+<span class="token comment">-- Insert Multple data</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> shippers<span class="token punctuation">(</span>name<span class="token punctuation">)</span>
+<span class="token keyword">values</span><span class="token punctuation">(</span><span class="token string">'shipers1'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">(</span><span class="token string">'shipers2'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">(</span><span class="token string">'shipers3'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">-- Insert Multple table</span>
+<span class="token comment">-- get also lastInsertId</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> orders <span class="token punctuation">(</span>customer_id<span class="token punctuation">,</span> order_date<span class="token punctuation">,</span> <span class="token keyword">status</span><span class="token punctuation">)</span>
+<span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'2019-02-01'</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> order_items
+<span class="token keyword">VALUES</span>
+<span class="token punctuation">(</span>LAST_INSERT_ID<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2.95</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">(</span>LAST_INSERT_ID<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2.95</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+</code></pre></div><h2 id="create-a-copy-of-a-table"><a href="#create-a-copy-of-a-table" class="header-anchor">#</a> CREATE A COPY OF A TABLE</h2> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> order_archived <span class="token keyword">as</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> orders<span class="token punctuation">;</span>
+
+<span class="token comment">-- insert with subquery with condition</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> order_archived
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> orders
+<span class="token keyword">WHERE</span> order_date <span class="token operator">&lt;</span> <span class="token string">'2019-01-01'</span>
+
+
+
+
+
+</code></pre></div><h2 id="update-a-single-row"><a href="#update-a-single-row" class="header-anchor">#</a> UPDATE A SINGLE ROW</h2> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">UPDATE</span> invoices
+<span class="token keyword">SET</span> payment_total <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">,</span> payment_date <span class="token operator">=</span> <span class="token string">'2019-03-02'</span>
+<span class="token keyword">WHERE</span> invoice_id <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- NULL VALUE INSERT</span>
+<span class="token keyword">UPDATE</span> invoices
+<span class="token keyword">SET</span> payment_total <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> payment_date <span class="token operator">=</span> <span class="token boolean">NULL</span>
+<span class="token keyword">WHERE</span> invoice_id <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- DEFAULT VALUE</span>
+<span class="token keyword">UPDATE</span> invoices
+<span class="token keyword">SET</span> payment_total <span class="token operator">=</span> <span class="token keyword">DEFAULT</span><span class="token punctuation">,</span> payment_date <span class="token operator">=</span> <span class="token boolean">NULL</span>
+<span class="token keyword">WHERE</span> invoice_id <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- WITH MULTIPLY VALUE</span>
+
+<span class="token keyword">UPDATE</span> invoices
+<span class="token keyword">SET</span> payment_total <span class="token operator">=</span> invoice_total <span class="token operator">*</span> <span class="token number">10</span><span class="token punctuation">,</span> payment_date <span class="token operator">=</span> <span class="token boolean">NULL</span>
+<span class="token keyword">WHERE</span> invoice_id <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- WITH MULTIPLY ROWS UPDATE</span>
+
+<span class="token keyword">UPDATE</span> invoices
+<span class="token keyword">SET</span> payment_total <span class="token operator">=</span> invoice_total <span class="token operator">*</span> <span class="token number">10</span><span class="token punctuation">,</span> payment_date <span class="token operator">=</span> <span class="token boolean">NULL</span>
+<span class="token keyword">WHERE</span> invoice_id <span class="token operator">IN</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- UPDATE MUTLPLE ROWS AND PLUS SOME Points</span>
+
+<span class="token keyword">UPDATE</span> customers
+<span class="token keyword">SET</span> points <span class="token operator">=</span> points <span class="token operator">+</span> <span class="token number">5</span>
+<span class="token keyword">WHERE</span> birth_date <span class="token operator">&lt;</span> <span class="token string">'1990-01-01'</span><span class="token punctuation">;</span>
+
+</code></pre></div><h2 id="sub-queries"><a href="#sub-queries" class="header-anchor">#</a> SUB QUERIES</h2> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">UPDATE</span> invoices
+<span class="token keyword">SET</span> payment_total <span class="token operator">=</span> invoice_total <span class="token operator">*</span> <span class="token number">10</span><span class="token punctuation">,</span>
+    payment_date <span class="token operator">=</span> due_date
+<span class="token keyword">WHERE</span> client_id <span class="token operator">=</span> <span class="token punctuation">(</span>
+    <span class="token keyword">SELECT</span> client_id <span class="token keyword">FROM</span> clients
+    <span class="token keyword">WHERE</span> name <span class="token operator">=</span> <span class="token string">'My works'</span><span class="token punctuation">;</span>
+<span class="token punctuation">)</span>
+
+<span class="token comment">-- Multple updates with subquery</span>
+
+<span class="token keyword">UPDATE</span> invoices
+<span class="token keyword">SET</span> payment_total <span class="token operator">=</span> invoice_total <span class="token operator">*</span> <span class="token number">10</span><span class="token punctuation">,</span>
+    payment_date <span class="token operator">=</span> due_date
+<span class="token keyword">WHERE</span> client_id <span class="token operator">=</span> <span class="token punctuation">(</span>
+    <span class="token keyword">SELECT</span> client_id <span class="token keyword">FROM</span> clients
+    <span class="token keyword">WHERE</span> state <span class="token operator">IN</span> <span class="token punctuation">(</span><span class="token string">'CA'</span><span class="token punctuation">,</span><span class="token string">'NY'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">)</span>
+
+<span class="token comment">-- ONE MORE EXAMPLE</span>
+
+<span class="token keyword">UPDATE</span> orders
+<span class="token keyword">SET</span> comments <span class="token operator">=</span> <span class="token string">'gold customer'</span>
+<span class="token keyword">WHERE</span> customer_id <span class="token operator">IN</span>
+<span class="token punctuation">(</span>
+    <span class="token keyword">SELECT</span> customer_id
+    <span class="token keyword">FROM</span> customers
+    <span class="token keyword">WHERE</span> points <span class="token operator">&gt;</span> <span class="token number">4000</span>
+<span class="token punctuation">)</span>
+
+</code></pre></div><h2 id="delete"><a href="#delete" class="header-anchor">#</a> DELETE</h2> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">DELETE</span> <span class="token keyword">FROM</span> invoices
+<span class="token keyword">WHERE</span> invoice_id <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- subquery</span>
+
+<span class="token keyword">DELETE</span> <span class="token keyword">FROM</span> invoices
+<span class="token keyword">WHERE</span> client_id <span class="token operator">=</span> <span class="token punctuation">(</span>
+    <span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> clients
+    <span class="token keyword">WHERE</span> name <span class="token operator">=</span> <span class="token string">'Mywork'</span>
+<span class="token punctuation">)</span>
+
+
+</code></pre></div><h2 id="aggregate-functions"><a href="#aggregate-functions" class="header-anchor">#</a> Aggregate functions</h2> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token comment">-- MAX, MIN, AVG, SUM, COUNT</span>
+<span class="token keyword">SELECT</span>
+    <span class="token function">MAX</span><span class="token punctuation">(</span>invoice_total<span class="token punctuation">)</span> <span class="token keyword">AS</span> highest<span class="token punctuation">,</span>
+    <span class="token function">MIN</span><span class="token punctuation">(</span>invoice_total<span class="token punctuation">)</span> <span class="token keyword">AS</span> lowest<span class="token punctuation">,</span>
+    <span class="token function">AVG</span><span class="token punctuation">(</span>invoice_total<span class="token punctuation">)</span> <span class="token keyword">AS</span> average<span class="token punctuation">,</span>
+    <span class="token comment">--SUM(invoice_total) AS total,</span>
+    <span class="token function">SUM</span><span class="token punctuation">(</span>invoice_total <span class="token operator">*</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token keyword">AS</span> total<span class="token punctuation">,</span>
+    <span class="token function">COUNT</span><span class="token punctuation">(</span>invoice_total<span class="token punctuation">)</span> <span class="token keyword">AS</span> number_of_invoices<span class="token punctuation">,</span>
+    <span class="token comment">-- COUNT NULL VALUE WILL NOT ACCOUNT WE USE BELOW METHOD</span>
+    <span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token keyword">as</span> total_records
+    <span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token keyword">DISTINCT</span> client_id<span class="token punctuation">)</span> <span class="token keyword">as</span> total_records <span class="token comment">-- without duplicate id</span>
+<span class="token keyword">FROM</span> invoices<span class="token punctuation">;</span>
+
+</code></pre></div><h2 id="group-by-2"><a href="#group-by-2" class="header-anchor">#</a> Group by</h2> <p>Example we use it by group example we wanna sum every client so we use client_id</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token comment">-- get every client of sum</span>
+<span class="token keyword">SELECT</span> client_id<span class="token punctuation">,</span> <span class="token function">SUM</span><span class="token punctuation">(</span>invoice_total<span class="token punctuation">)</span> <span class="token keyword">AS</span> total_sales
+<span class="token keyword">FROM</span> invoices
+<span class="token keyword">GROUP</span> <span class="token keyword">BY</span> client_id
+
+<span class="token comment">-- multiple column</span>
+<span class="token keyword">SELECT</span> state<span class="token punctuation">,</span> city <span class="token function">SUM</span><span class="token punctuation">(</span>invoice_total<span class="token punctuation">)</span> <span class="token keyword">AS</span> total_sales
+<span class="token keyword">FROM</span> invoices i
+<span class="token keyword">JOIN</span> clients <span class="token keyword">USING</span> <span class="token punctuation">(</span>client_id<span class="token punctuation">)</span>
+<span class="token keyword">GROUP</span> <span class="token keyword">BY</span> state<span class="token punctuation">,</span> city
+
+<span class="token comment">-- multiple column</span>
+
+<span class="token keyword">SELECT</span>
+<span class="token keyword">date</span><span class="token punctuation">,</span>
+pm<span class="token punctuation">.</span>name <span class="token keyword">AS</span> payment_method<span class="token punctuation">,</span>
+<span class="token function">SUM</span><span class="token punctuation">(</span>amount<span class="token punctuation">)</span> <span class="token keyword">AS</span> total_payments
+<span class="token keyword">FROM</span> payments p
+<span class="token keyword">JOIN</span> payment_methods pm
+    <span class="token keyword">ON</span> p<span class="token punctuation">.</span>payment_method <span class="token operator">=</span> pm<span class="token punctuation">.</span>payment_method_id
+<span class="token keyword">GROUP</span> <span class="token keyword">BY</span> <span class="token keyword">date</span><span class="token punctuation">,</span> payment_method
+
+</code></pre></div><h2 id="having"><a href="#having" class="header-anchor">#</a> Having</h2> <p>When we use group by we can't use where condition because
+group is below query instead of where we use having query after
+that group by..
+having query filter Group by query</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> client_id<span class="token punctuation">,</span>
+<span class="token function">SUM</span><span class="token punctuation">(</span>invoice_total<span class="token punctuation">)</span> <span class="token keyword">as</span> total_sales
+<span class="token keyword">FROM</span> invoices
+<span class="token comment">-- WHERE total_sales &gt; 500 Where condition not work with group by</span>
+<span class="token comment">-- we have to use having instead of where below to Group by</span>
+<span class="token keyword">GROUP</span> <span class="token keyword">BY</span> client_id
+<span class="token keyword">HAVING</span> total_sales <span class="token operator">&gt;</span> <span class="token number">500</span>
+
+<span class="token comment">-- With and</span>
+
+<span class="token keyword">SELECT</span> client_id<span class="token punctuation">,</span>
+<span class="token function">SUM</span><span class="token punctuation">(</span>invoice_total<span class="token punctuation">)</span> <span class="token keyword">as</span> total_sales
+<span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token keyword">AS</span> number_of_invoices
+<span class="token keyword">FROM</span> invoices
+<span class="token comment">-- WHERE total_sales &gt; 500 Where condition not work with group by</span>
+<span class="token comment">-- we have to use having instead of where below to Group by</span>
+<span class="token keyword">GROUP</span> <span class="token keyword">BY</span> client_id
+<span class="token keyword">HAVING</span> total_sales <span class="token operator">&gt;</span> <span class="token number">500</span> <span class="token operator">AND</span> number_of_invoices <span class="token operator">&gt;</span> <span class="token number">5</span><span class="token punctuation">;</span>
+
+</code></pre></div><h2 id="rollup"><a href="#rollup" class="header-anchor">#</a> Rollup</h2> <p>rollup help us account group by value total return</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> client_id<span class="token punctuation">,</span>
+<span class="token function">SUM</span><span class="token punctuation">(</span>invoice_total<span class="token punctuation">)</span> <span class="token keyword">AS</span> total_sales
+<span class="token keyword">FROM</span> invoices
+<span class="token keyword">GROUP</span> <span class="token keyword">BY</span> client_id <span class="token keyword">WITH ROLLUP</span>
+
+</code></pre></div><h2 id="subqueries"><a href="#subqueries" class="header-anchor">#</a> SUBQUERIES</h2> <div class="language-sql extra-class"><pre class="language-sql"><code>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> products
+<span class="token keyword">WHERE</span> unit_price <span class="token operator">&gt;</span> <span class="token punctuation">(</span>
+    <span class="token keyword">SELECT</span> unit_price
+    <span class="token keyword">FROM</span> products
+    <span class="token keyword">WHERE</span> product_id <span class="token operator">=</span> <span class="token number">3</span>
+<span class="token punctuation">)</span>
+
+<span class="token comment">-- earn more than average</span>
+
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span>
+employees
+<span class="token keyword">WHERE</span> salary <span class="token operator">&gt;</span> <span class="token punctuation">(</span>
+    <span class="token keyword">SELECT</span> <span class="token function">AVG</span><span class="token punctuation">(</span>salary<span class="token punctuation">)</span>
+    <span class="token keyword">FROM</span> employees
+<span class="token punctuation">)</span>
+
+<span class="token comment">-- we can also use join here</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> clients
+<span class="token keyword">WHERE</span> client_id <span class="token operator">IN</span><span class="token punctuation">(</span>
+    <span class="token keyword">SELECT</span> <span class="token keyword">DISTINCT</span> client_id
+    <span class="token keyword">FROM</span> invoices
+<span class="token punctuation">)</span>
+
+
+<span class="token comment">-- each employee get avg salary with greater than</span>
+
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> employees e
+<span class="token keyword">WHERE</span> salary <span class="token operator">&gt;</span> <span class="token punctuation">(</span>
+    <span class="token keyword">SELECT</span> <span class="token function">AVG</span><span class="token punctuation">(</span>salary<span class="token punctuation">)</span>
+    <span class="token keyword">FROM</span> employees
+    <span class="token keyword">WHERE</span> office_id <span class="token operator">=</span> e<span class="token punctuation">.</span>office_id <span class="token comment">-- main query we are using here becasue help use multiple data</span>
+<span class="token punctuation">)</span>
+
+
+<span class="token comment">-- another example</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> invoices i
+<span class="token keyword">WHERE</span> invoice_total <span class="token operator">&gt;</span> <span class="token punctuation">(</span>
+    <span class="token keyword">SELECT</span> <span class="token function">AVG</span><span class="token punctuation">(</span>invoice_total<span class="token punctuation">)</span>
+    <span class="token keyword">FROM</span> invoices
+    <span class="token keyword">WHERE</span> client_id <span class="token operator">=</span> i<span class="token punctuation">.</span>client_id
+<span class="token punctuation">)</span>
+
+
+
+
+</code></pre></div><h2 id="all"><a href="#all" class="header-anchor">#</a> ALL</h2> <p>All use for where condition with many value like IN</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> invoices
+<span class="token keyword">WHERE</span> invoice_total <span class="token operator">&gt;</span> <span class="token keyword">ALL</span><span class="token punctuation">(</span><span class="token number">130</span><span class="token punctuation">,</span> <span class="token number">160</span><span class="token punctuation">,</span> <span class="token number">189</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">-- all value campare that will be show</span>
+
+<span class="token comment">-- this query return single will not work multiple</span>
+
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> invoices
+<span class="token keyword">WHERE</span> invoice_total <span class="token operator">&gt;</span> <span class="token punctuation">(</span>
+    <span class="token keyword">SELECT</span> <span class="token function">MAX</span><span class="token punctuation">(</span>invoice_total<span class="token punctuation">)</span> <span class="token comment">-- WE ARE GETTING HERE ONE RESULT</span>
+    <span class="token keyword">FROM</span> invoices
+    <span class="token keyword">WHERE</span> client_id <span class="token operator">=</span> <span class="token number">3</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- MULTIPLY QUERY WILL NOT WORK EXAMPLE</span>
+
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> invoices
+<span class="token keyword">WHERE</span> invoice_total <span class="token operator">&gt;</span> <span class="token punctuation">(</span> <span class="token comment">-- but this condition work only single result</span>
+    <span class="token keyword">SELECT</span> invoice_total <span class="token comment">-- WE ARE GETTING MULTIPLY RESULT</span>
+    <span class="token keyword">FROM</span> invoices
+    <span class="token keyword">WHERE</span> client_id <span class="token operator">=</span> <span class="token number">3</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> invoices
+<span class="token keyword">WHERE</span> invoice_total <span class="token operator">&gt;</span> <span class="token keyword">ALL</span><span class="token punctuation">(</span> <span class="token comment">-- this where work multiple values</span>
+    <span class="token keyword">SELECT</span> invoice_total
+    <span class="token keyword">FROM</span> invoices
+    <span class="token keyword">WHERE</span> client_id <span class="token operator">=</span> <span class="token number">3</span>
+
+<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">-- all value campare</span>
+
+</code></pre></div><h2 id="any"><a href="#any" class="header-anchor">#</a> ANY</h2> <p>Any like same IN example</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> clients
+<span class="token keyword">WHERE</span> client_id <span class="token operator">IN</span> <span class="token punctuation">(</span>
+    <span class="token keyword">SELECT</span> client_id
+    <span class="token keyword">FROM</span> invoices
+    <span class="token keyword">GROUP</span> <span class="token keyword">BY</span> client_id
+    <span class="token keyword">HAVING</span> <span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token operator">&gt;=</span> <span class="token number">2</span>
+<span class="token punctuation">)</span>
+
+<span class="token comment">-- any is equalent in example</span>
+
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> clients
+<span class="token keyword">WHERE</span> client_id <span class="token operator">=</span> <span class="token keyword">ANY</span> <span class="token punctuation">(</span>
+    <span class="token keyword">SELECT</span> client_id
+    <span class="token keyword">FROM</span> invoices
+    <span class="token keyword">GROUP</span> <span class="token keyword">BY</span> client_id
+    <span class="token keyword">HAVING</span> <span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token operator">&gt;=</span> <span class="token number">2</span>
+<span class="token punctuation">)</span>
+
+</code></pre></div><h2 id="exists-operator"><a href="#exists-operator" class="header-anchor">#</a> EXISTS OPERATOR</h2> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> clients
+<span class="token keyword">WHERE</span> client_id <span class="token operator">IN</span><span class="token punctuation">(</span>
+    <span class="token keyword">SELECT</span> <span class="token keyword">DISTINCT</span> client_id
+    <span class="token keyword">FROM</span> invoices
+<span class="token punctuation">)</span>
+<span class="token comment">-- IN(2,3,4,34)</span>
+
+<span class="token comment">-- above query with EXISTS operator</span>
+<span class="token comment">-- we don't use IN is slow performance EXISTS is fast</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> clients c
+<span class="token keyword">WHERE</span> <span class="token keyword">EXISTS</span> <span class="token punctuation">(</span>
+    <span class="token keyword">SELECT</span> client_id
+    <span class="token keyword">FROM</span> invoices
+    <span class="token keyword">WHERE</span> client_id <span class="token operator">=</span> c<span class="token punctuation">.</span>client_id
+<span class="token punctuation">)</span>
+
+<span class="token comment">-- EXISTS DONT RETURN</span>
+
+<span class="token comment">-- another example with don't exists</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> products p
+<span class="token keyword">WHERE</span> <span class="token operator">NOT</span> <span class="token keyword">EXISTS</span><span class="token punctuation">(</span> <span class="token comment">-- not exists</span>
+    <span class="token keyword">SELECT</span> product_id
+    <span class="token keyword">FROM</span> order_items
+    <span class="token keyword">WHERE</span> product_id <span class="token operator">=</span> p<span class="token punctuation">.</span>product_id
+<span class="token punctuation">)</span>
+
+
+</code></pre></div><h2 id="subqueries-in-the-select-clause"><a href="#subqueries-in-the-select-clause" class="header-anchor">#</a> SUBQUERIES IN THE SELECT CLAUSE</h2> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span>
+    invoice_id<span class="token punctuation">,</span>
+    invoice_total
+    <span class="token punctuation">(</span><span class="token keyword">SELECT</span> <span class="token function">AVG</span><span class="token punctuation">(</span>invoice_total<span class="token punctuation">)</span> <span class="token keyword">FROM</span> invoices<span class="token punctuation">)</span> <span class="token keyword">AS</span> invoice_average<span class="token punctuation">,</span>
+    <span class="token comment">-- invoice_total - (SELECT AVG(invoice_total) FROM invoices) AS different</span>
+     invoice_total <span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">SELECT</span> invoice_average<span class="token punctuation">)</span> <span class="token keyword">AS</span> different <span class="token comment">-- we also select column name like this example</span>
+<span class="token keyword">FROM</span> invoices
+
+<span class="token comment">-- One more example</span>
+<span class="token keyword">SELECT</span>
+client_id<span class="token punctuation">,</span>
+name<span class="token punctuation">,</span>
+<span class="token punctuation">(</span><span class="token keyword">SELECT</span> <span class="token function">SUM</span><span class="token punctuation">(</span>invoice_total<span class="token punctuation">)</span> <span class="token keyword">FROM</span> invoices <span class="token keyword">WHERE</span> client_id <span class="token operator">=</span> c<span class="token punctuation">.</span>client_id<span class="token punctuation">)</span> <span class="token keyword">AS</span> total_sales<span class="token punctuation">,</span>
+<span class="token punctuation">(</span><span class="token keyword">SELECT</span> <span class="token function">AVG</span><span class="token punctuation">(</span>invoice_total<span class="token punctuation">)</span> <span class="token keyword">FROM</span> invoices<span class="token punctuation">)</span> <span class="token keyword">AS</span> average<span class="token punctuation">,</span>
+<span class="token punctuation">(</span><span class="token keyword">SELECT</span> total_sales <span class="token operator">-</span> average<span class="token punctuation">)</span> <span class="token keyword">AS</span> difference
+<span class="token keyword">FROM</span> clients c<span class="token punctuation">;</span>
+
+</code></pre></div><h2 id="subqueries-in-the-from"><a href="#subqueries-in-the-from" class="header-anchor">#</a> SUBQUERIES IN THE FROM</h2> <div class="language-sql extra-class"><pre class="language-sql"><code>
+<span class="token comment">-- better use views it's very big query make short with view below example of view</span>
+
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> <span class="token punctuation">(</span>
+    <span class="token keyword">SELECT</span>
+    client_id<span class="token punctuation">,</span>
+    name<span class="token punctuation">,</span>
+    <span class="token punctuation">(</span><span class="token keyword">SELECT</span> <span class="token function">SUM</span><span class="token punctuation">(</span>invoice_total<span class="token punctuation">)</span> <span class="token keyword">FROM</span> invoices <span class="token keyword">WHERE</span> client_id <span class="token operator">=</span> c<span class="token punctuation">.</span>client_id<span class="token punctuation">)</span> <span class="token keyword">AS</span> total_sales<span class="token punctuation">,</span>
+    <span class="token punctuation">(</span><span class="token keyword">SELECT</span> <span class="token function">AVG</span><span class="token punctuation">(</span>invoice_total<span class="token punctuation">)</span> <span class="token keyword">FROM</span> invoices<span class="token punctuation">)</span> <span class="token keyword">AS</span> average<span class="token punctuation">,</span>
+    <span class="token punctuation">(</span><span class="token keyword">SELECT</span> total_sales <span class="token operator">-</span> average<span class="token punctuation">)</span> <span class="token keyword">AS</span> difference
+    <span class="token keyword">FROM</span> clients c
+<span class="token punctuation">)</span> <span class="token keyword">AS</span> sales_summary
+<span class="token keyword">WHERE</span> total_sales <span class="token operator">IS</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">;</span>
+
+
+</code></pre></div><h2 id="functions"><a href="#functions" class="header-anchor">#</a> Functions</h2> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token comment">-- Numeric functions</span>
+<span class="token keyword">SELECT</span> <span class="token function">ROUND</span><span class="token punctuation">(</span><span class="token number">5.78</span><span class="token punctuation">)</span> <span class="token comment">-- Output =&gt; 6</span>
+<span class="token keyword">SELECT</span> <span class="token function">ROUND</span><span class="token punctuation">(</span><span class="token number">5.2</span><span class="token punctuation">)</span> <span class="token comment">-- Output =&gt; 5</span>
+<span class="token keyword">SELECT</span> <span class="token function">ROUND</span><span class="token punctuation">(</span><span class="token number">5.78</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">-- Output =&gt; 5.7</span>
+<span class="token keyword">SELECT</span> <span class="token function">ROUND</span><span class="token punctuation">(</span><span class="token number">5.78353</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token comment">-- Output =&gt; 5.78</span>
+<span class="token keyword">SELECT</span> <span class="token keyword">TRUNCATE</span><span class="token punctuation">(</span><span class="token number">5.78353</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token comment">-- Output =&gt; 5.78</span>
+<span class="token keyword">SELECT</span> CEILING<span class="token punctuation">(</span><span class="token number">5.7</span><span class="token punctuation">)</span> <span class="token comment">-- Output =&gt; 6</span>
+<span class="token keyword">SELECT</span> CEILING<span class="token punctuation">(</span><span class="token number">5.2</span><span class="token punctuation">)</span> <span class="token comment">-- Output =&gt; 6</span>
+<span class="token keyword">SELECT</span> FLOOR<span class="token punctuation">(</span><span class="token number">5.2</span><span class="token punctuation">)</span> <span class="token comment">-- Output =&gt; 6</span>
+<span class="token keyword">SELECT</span> ABS<span class="token punctuation">(</span><span class="token number">5.2</span><span class="token punctuation">)</span> <span class="token comment">-- Output =&gt; 5.2</span>
+<span class="token keyword">SELECT</span> ABS<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">5.2</span><span class="token punctuation">)</span> <span class="token comment">-- Output =&gt; 5.2</span>
+<span class="token keyword">SELECT</span> RAND<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">-- Output =&gt;324324324</span>
+
+<span class="token comment">-- String Functions</span>
+
+<span class="token keyword">SELECT</span> LENGTH<span class="token punctuation">(</span><span class="token string">'sky'</span><span class="token punctuation">)</span> <span class="token comment">-- Output =&gt; 3</span>
+<span class="token keyword">SELECT</span> UPPER<span class="token punctuation">(</span><span class="token string">'sky'</span><span class="token punctuation">)</span> <span class="token comment">-- Output =&gt; SKY</span>
+<span class="token keyword">SELECT</span> LOWER<span class="token punctuation">(</span><span class="token string">'Sky'</span><span class="token punctuation">)</span> <span class="token comment">-- Output =&gt; sky</span>
+<span class="token keyword">SELECT</span> LTRIM<span class="token punctuation">(</span><span class="token string">'     Sky'</span><span class="token punctuation">)</span> <span class="token comment">-- Output =&gt; Sky left trim</span>
+<span class="token keyword">SELECT</span> RTRIM<span class="token punctuation">(</span><span class="token string">'Sky'</span><span class="token punctuation">)</span> <span class="token comment">-- Output =&gt; Sky right trim</span>
+<span class="token keyword">SELECT</span> TRIM<span class="token punctuation">(</span><span class="token string">'Sky'</span><span class="token punctuation">)</span> <span class="token comment">-- Output =&gt; Sky right trim</span>
+<span class="token keyword">SELECT</span> <span class="token keyword">LEFT</span><span class="token punctuation">(</span><span class="token string">'Skyblue'</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token comment">-- Output =&gt; Sky</span>
+<span class="token keyword">SELECT</span> <span class="token keyword">RIGHT</span><span class="token punctuation">(</span><span class="token string">'Skyblue'</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token comment">-- Output =&gt; blue</span>
+<span class="token keyword">SELECT</span> SUBSTRING<span class="token punctuation">(</span><span class="token string">'Skyblue'</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span> <span class="token comment">-- Output =&gt; blue first arg start point second arg how many character</span>
+<span class="token keyword">SELECT</span> LOCATE<span class="token punctuation">(</span><span class="token string">'u'</span><span class="token punctuation">,</span> <span class="token string">'skyblue'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">-- Output 6 return index of character Uu both are same not ksenstive and not found zero</span>
+<span class="token keyword">SELECT</span> <span class="token keyword">REPLACE</span><span class="token punctuation">(</span><span class="token string">'Kindergarten'</span><span class="token punctuation">,</span> <span class="token string">'garten'</span><span class="token punctuation">,</span> <span class="token string">'graden'</span><span class="token punctuation">)</span> <span class="token comment">-- Output =&gt; Kindergraden</span>
+
+<span class="token keyword">SELECT</span> CONCAT<span class="token punctuation">(</span><span class="token string">'first'</span><span class="token punctuation">,</span> <span class="token string">'last'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">SELECT</span> CONCAT<span class="token punctuation">(</span>first_name<span class="token punctuation">,</span> <span class="token string">' '</span><span class="token punctuation">,</span> last_name<span class="token punctuation">)</span> <span class="token keyword">AS</span> fullname <span class="token keyword">from</span> customers<span class="token punctuation">;</span>
+
+
+<span class="token comment">-- Date time function</span>
+
+<span class="token keyword">SELECT</span> <span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">-- 2020-06-21 11:28:32</span>
+<span class="token keyword">SELECT</span> CURDATE<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">-- 2020-06-21</span>
+<span class="token keyword">SELECT</span> CURTIME<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">-- 11:30:28</span>
+<span class="token keyword">SELECT</span> <span class="token keyword">YEAR</span><span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">-- 2020</span>
+<span class="token keyword">SELECT</span> <span class="token keyword">MONTH</span><span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">-- 05</span>
+<span class="token keyword">SELECT</span> <span class="token keyword">DAY</span><span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">-- 05</span>
+<span class="token keyword">SELECT</span> <span class="token keyword">HOUR</span><span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">-- 05</span>
+<span class="token keyword">SELECT</span> <span class="token keyword">MINUTE</span><span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">-- 05</span>
+<span class="token keyword">SELECT</span> <span class="token keyword">SECOND</span><span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">-- 05</span>
+<span class="token keyword">SELECT</span> DAYNAME<span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">-- Sunday</span>
+<span class="token keyword">SELECT</span> MONTHNAME<span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">-- JULY</span>
+
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> orders <span class="token keyword">WHERE</span> <span class="token keyword">YEAR</span><span class="token punctuation">(</span>order_date<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token keyword">YEAR</span><span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">-- format date time</span>
+<span class="token keyword">SELECT</span> DATE_FORMAT<span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'%y'</span><span class="token punctuation">)</span> <span class="token comment">-- 20</span>
+<span class="token keyword">SELECT</span> DATE_FORMAT<span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'%Y'</span><span class="token punctuation">)</span> <span class="token comment">-- 2020</span>
+<span class="token keyword">SELECT</span> DATE_FORMAT<span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'%%m Y'</span><span class="token punctuation">)</span> <span class="token comment">-- 03 2020</span>
+<span class="token keyword">SELECT</span> DATE_FORMAT<span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'%%M Y'</span><span class="token punctuation">)</span> <span class="token comment">-- MARCH 2020</span>
+<span class="token keyword">SELECT</span> DATE_FORMAT<span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'%%M %d Y'</span><span class="token punctuation">)</span> <span class="token comment">-- MARCH 11 2020</span>
+
+<span class="token comment">-- time format</span>
+<span class="token keyword">SELECT</span> TIME_FORMAT<span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'%H:%i'</span><span class="token punctuation">)</span> <span class="token comment">-- 12:11</span>
+<span class="token keyword">SELECT</span> TIME_FORMAT<span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'%H:%i %p'</span><span class="token punctuation">)</span> <span class="token comment">-- 12:11pm</span>
+
+<span class="token comment">-- Add date time mean plus</span>
+
+<span class="token keyword">SELECT</span> DATE_ADD<span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">INTERVAL</span> <span class="token number">1</span> <span class="token keyword">DAY</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">-- 2020-06-22 12:40:56</span>
+<span class="token keyword">SELECT</span> DATE_ADD<span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">INTERVAL</span> <span class="token number">1</span> <span class="token keyword">YEAR</span><span class="token punctuation">)</span> <span class="token comment">-- 2021-06-22 12:40:56</span>
+<span class="token keyword">SELECT</span> DATE_ADD<span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">INTERVAL</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token keyword">YEAR</span><span class="token punctuation">)</span> <span class="token comment">-- 2019-06-22 12:40:56</span>
+<span class="token keyword">SELECT</span> DATE_SUB<span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">INTERVAL</span> <span class="token number">1</span> <span class="token keyword">YEAR</span><span class="token punctuation">)</span> <span class="token comment">-- 2019-06-22 12:40:56</span>
+
+<span class="token keyword">SELECT</span> DATEDIFF<span class="token punctuation">(</span><span class="token string">'2019-01-05'</span><span class="token punctuation">,</span> <span class="token string">'2019-01-01'</span><span class="token punctuation">)</span> <span class="token comment">-- 4</span>
+<span class="token keyword">SELECT</span> TIME_TO_SEC<span class="token punctuation">(</span><span class="token string">'09:00'</span><span class="token punctuation">)</span> <span class="token comment">-- 32400</span>
+<span class="token keyword">SELECT</span> TIME_TO_SEC<span class="token punctuation">(</span><span class="token string">'09:10'</span><span class="token punctuation">)</span> <span class="token operator">-</span> TIME_TO_SEC<span class="token punctuation">(</span><span class="token string">'09:02'</span><span class="token punctuation">)</span> <span class="token comment">-- 480</span>
+</code></pre></div><h2 id="ifnull-and-coalesce"><a href="#ifnull-and-coalesce" class="header-anchor">#</a> IFNULL and COALESCE</h2> <p>If value null show this text</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span>
+    order_id<span class="token punctuation">,</span>
+    <span class="token comment">-- if shipper_id null show Not assigned</span>
+    IFNULL<span class="token punctuation">(</span>shipper_id<span class="token punctuation">,</span> <span class="token string">'Not assigned'</span><span class="token punctuation">)</span> <span class="token keyword">AS</span> shippers
+<span class="token keyword">FROM</span> orders
+
+
+<span class="token comment">-- COALESCE check two condition if both false print not assigned</span>
+<span class="token keyword">SELECT</span>
+    order_id<span class="token punctuation">,</span>
+    <span class="token comment">-- if shipper_id null show Not assigned</span>
+    <span class="token comment">-- if shipper_id null show comments if comments is null show Not assigned</span>
+    <span class="token keyword">COALESCE</span><span class="token punctuation">(</span>shipper_id<span class="token punctuation">,</span> comments<span class="token punctuation">,</span>  <span class="token string">'Not assigned'</span><span class="token punctuation">)</span> <span class="token keyword">AS</span> shippers
+<span class="token keyword">FROM</span> orders
+
+
+
+</code></pre></div><h2 id="if-function"><a href="#if-function" class="header-anchor">#</a> IF FUNCTION</h2> <p>IF(expression, first, second) true first false second
+we don't need use union operator we can handle by if function</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> order_id<span class="token punctuation">,</span> order_date
+    <span class="token keyword">IF</span><span class="token punctuation">(</span><span class="token keyword">YEAR</span><span class="token punctuation">(</span>order_date<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token keyword">YEAR</span><span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'Active'</span><span class="token punctuation">,</span><span class="token string">'Archived'</span><span class="token punctuation">)</span>
+<span class="token keyword">FROM</span> orders
+
+<span class="token comment">-- another example</span>
+<span class="token keyword">SELECT</span> product_id<span class="token punctuation">,</span> name<span class="token punctuation">,</span>
+        <span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token keyword">AS</span> orders<span class="token punctuation">,</span>
+        <span class="token keyword">IF</span><span class="token punctuation">(</span><span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'Many times'</span><span class="token punctuation">,</span> <span class="token string">'Once'</span><span class="token punctuation">)</span> <span class="token keyword">AS</span> frequerince
+<span class="token keyword">FROM</span> products
+<span class="token keyword">JOIN</span> order_items <span class="token keyword">USING</span> <span class="token punctuation">(</span>product_id<span class="token punctuation">)</span>
+<span class="token keyword">GROUP</span> <span class="token keyword">BY</span> product_id<span class="token punctuation">,</span> name
+
+</code></pre></div><h2 id="case-operator"><a href="#case-operator" class="header-anchor">#</a> CASE OPERATOR</h2> <p>same like switch operator</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> order_id<span class="token punctuation">,</span>
+    <span class="token keyword">CASE</span>
+        <span class="token keyword">WHEN</span> <span class="token keyword">YEAR</span><span class="token punctuation">(</span>order_date<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token keyword">YEAR</span><span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">THEN</span> <span class="token string">'active'</span>
+        <span class="token keyword">WHEN</span> <span class="token keyword">YEAR</span><span class="token punctuation">(</span>order_date<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token keyword">YEAR</span><span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token keyword">THEN</span> <span class="token string">'Last Year'</span>
+        <span class="token keyword">WHEN</span> <span class="token keyword">YEAR</span><span class="token punctuation">(</span>order_date<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token keyword">YEAR</span><span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">THEN</span> <span class="token string">'Archived'</span>
+        <span class="token keyword">ELSE</span> <span class="token string">'Future'</span>
+    <span class="token keyword">END</span> <span class="token keyword">AS</span> category <span class="token comment">-- alias name</span>
+<span class="token keyword">FROM</span> orders
+
+<span class="token comment">-- one more example</span>
+<span class="token keyword">SELECT</span> CONCAT<span class="token punctuation">(</span>first_name<span class="token punctuation">,</span> <span class="token string">' '</span><span class="token punctuation">,</span> last_name<span class="token punctuation">)</span> <span class="token keyword">AS</span> customer<span class="token punctuation">,</span>
+    points
+    <span class="token keyword">CASE</span>
+        <span class="token keyword">WHEN</span> points <span class="token operator">&gt;</span> <span class="token number">3000</span> <span class="token keyword">THEN</span> <span class="token string">'Gold'</span>
+        <span class="token keyword">WHEN</span> points <span class="token operator">&gt;=</span> <span class="token number">2000</span> <span class="token keyword">THEN</span> <span class="token string">'Silver'</span>
+        <span class="token keyword">ELSE</span> <span class="token string">'Bronze'</span> <span class="token keyword">END</span> <span class="token keyword">AS</span> category
+<span class="token keyword">FROM</span> customers
+
+</code></pre></div><h2 id="views"><a href="#views" class="header-anchor">#</a> Views</h2> <div class="language-sql extra-class"><pre class="language-sql"><code>
+<span class="token keyword">CREATE</span> <span class="token keyword">VIEW</span> sales_by_client <span class="token keyword">AS</span>
+<span class="token comment">-- first run below query if proper work write above query</span>
+<span class="token keyword">SELECT</span>
+    c<span class="token punctuation">.</span>client_id<span class="token punctuation">,</span>
+    c<span class="token punctuation">.</span>name
+    <span class="token function">SUM</span><span class="token punctuation">(</span>invoice_total<span class="token punctuation">)</span> <span class="token keyword">AS</span> total_sales
+<span class="token keyword">FROM</span> clients c
+<span class="token keyword">JOIN</span> invoices i <span class="token keyword">USING</span> <span class="token punctuation">(</span>client_id<span class="token punctuation">)</span>
+<span class="token keyword">GROUP</span> <span class="token keyword">BY</span> client_id name
+
+
+<span class="token comment">-- AFTER THAT CREATE VIEW USE THIS TABLE</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> sales_by_client<span class="token punctuation">;</span>
+
+
+
+<span class="token comment">-----------------------------------------------</span>
+
+<span class="token comment">-- Altering or Dropping Views</span>
+
+<span class="token comment">-- First way</span>
+<span class="token keyword">DROP</span> <span class="token keyword">VIEW</span> sales_by_client<span class="token punctuation">;</span>
+
+<span class="token comment">-- Second way</span>
+
+<span class="token keyword">CREATE</span> <span class="token operator">OR</span> <span class="token keyword">REPLACE</span> <span class="token keyword">VIEW</span> sales_by_client <span class="token keyword">AS</span>
+<span class="token comment">-- first run below query if proper work write above query</span>
+<span class="token keyword">SELECT</span>
+    c<span class="token punctuation">.</span>client_id<span class="token punctuation">,</span>
+    c<span class="token punctuation">.</span>name<span class="token punctuation">,</span>
+    c<span class="token punctuation">.</span>due_date
+    <span class="token function">SUM</span><span class="token punctuation">(</span>invoice_total<span class="token punctuation">)</span> <span class="token keyword">AS</span> total_sales
+<span class="token keyword">FROM</span> clients c
+<span class="token keyword">JOIN</span> invoices i <span class="token keyword">USING</span> <span class="token punctuation">(</span>client_id<span class="token punctuation">)</span>
+<span class="token keyword">GROUP</span> <span class="token keyword">BY</span> client_id name
+
+<span class="token comment">-- dont use UPDATE IF WE HAVE</span>
+<span class="token comment">-- DISTINCT, AGGREGATE FUNCTION (MIN, MAX,SUM)</span>
+<span class="token comment">-- GROUP BY / HAVING</span>
+<span class="token comment">-- UNION</span>
+
+<span class="token keyword">UPDATE</span> sales_by_client
+<span class="token keyword">SET</span> due_date <span class="token operator">=</span> DATE_ADD<span class="token punctuation">(</span>due_date<span class="token punctuation">,</span> <span class="token keyword">INTERVAL</span> <span class="token number">2</span> <span class="token keyword">DAY</span><span class="token punctuation">)</span>
+<span class="token keyword">WHERE</span> invoice_id <span class="token operator">=</span> <span class="token number">1</span>
+
+
+<span class="token comment">-- stop update or deleting in views</span>
+
+<span class="token keyword">SELECT</span>
+    c<span class="token punctuation">.</span>client_id<span class="token punctuation">,</span>
+    c<span class="token punctuation">.</span>name<span class="token punctuation">,</span>
+    c<span class="token punctuation">.</span>due_date
+    <span class="token function">SUM</span><span class="token punctuation">(</span>invoice_total<span class="token punctuation">)</span> <span class="token keyword">AS</span> total_sales
+<span class="token keyword">FROM</span> clients c
+<span class="token keyword">JOIN</span> invoices i <span class="token keyword">USING</span> <span class="token punctuation">(</span>client_id<span class="token punctuation">)</span>
+<span class="token keyword">GROUP</span> <span class="token keyword">BY</span> client_id name
+<span class="token keyword">WITH</span> <span class="token keyword">CHECK</span> <span class="token keyword">OPTION</span>
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mysql/" class="prev router-link-active">
+        Sql
+      </a></span> <span class="next"><a href="/mysql/advance.html">
+        Sql Advance
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.84ebb9eb.js" defer></script><script src="/assets/js/2.e4b52d1b.js" defer></script><script src="/assets/js/30.caa58080.js" defer></script><script src="/assets/js/3.77ab59e8.js" defer></script>
+  </body>
+</html>

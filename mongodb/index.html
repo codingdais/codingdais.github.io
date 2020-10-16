@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MongoDb Besci | CodingDais</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="Coding Dais is the best online web, mobile, game development, and programming tutorials for all of the latest web, mobile, game technologies including Node.js, Angular, React.js, Vue.js, Laravel, Django, Spring Boot, Php, Python, Javascript, Java, C# and much more">
+    <link rel="preload" href="/assets/css/0.styles.5bd6d4d0.css" as="style"><link rel="preload" href="/assets/js/app.84ebb9eb.js" as="script"><link rel="preload" href="/assets/js/2.e4b52d1b.js" as="script"><link rel="preload" href="/assets/js/27.b2b83392.js" as="script"><link rel="prefetch" href="/assets/js/10.f42cee4c.js"><link rel="prefetch" href="/assets/js/11.15f46172.js"><link rel="prefetch" href="/assets/js/12.75dc3d61.js"><link rel="prefetch" href="/assets/js/13.ee06b57c.js"><link rel="prefetch" href="/assets/js/14.29d0454a.js"><link rel="prefetch" href="/assets/js/15.8f0829ef.js"><link rel="prefetch" href="/assets/js/16.eabe6809.js"><link rel="prefetch" href="/assets/js/17.b9ab7599.js"><link rel="prefetch" href="/assets/js/18.a93cf3ef.js"><link rel="prefetch" href="/assets/js/19.c1b005d2.js"><link rel="prefetch" href="/assets/js/20.b423fd65.js"><link rel="prefetch" href="/assets/js/21.9c8f0b45.js"><link rel="prefetch" href="/assets/js/22.0f2ac89e.js"><link rel="prefetch" href="/assets/js/23.3527495a.js"><link rel="prefetch" href="/assets/js/24.8fab01d4.js"><link rel="prefetch" href="/assets/js/25.b8fe479a.js"><link rel="prefetch" href="/assets/js/26.f4465bac.js"><link rel="prefetch" href="/assets/js/28.0195b470.js"><link rel="prefetch" href="/assets/js/29.4fa4fe12.js"><link rel="prefetch" href="/assets/js/3.77ab59e8.js"><link rel="prefetch" href="/assets/js/30.caa58080.js"><link rel="prefetch" href="/assets/js/31.adb2b3f6.js"><link rel="prefetch" href="/assets/js/32.e0eff7c7.js"><link rel="prefetch" href="/assets/js/33.9f405cf8.js"><link rel="prefetch" href="/assets/js/34.652e182d.js"><link rel="prefetch" href="/assets/js/35.b6c0d94e.js"><link rel="prefetch" href="/assets/js/36.79e07b90.js"><link rel="prefetch" href="/assets/js/37.d35d4cb3.js"><link rel="prefetch" href="/assets/js/38.34096d55.js"><link rel="prefetch" href="/assets/js/39.d8201e6f.js"><link rel="prefetch" href="/assets/js/4.d822e318.js"><link rel="prefetch" href="/assets/js/5.ea1a8308.js"><link rel="prefetch" href="/assets/js/6.7de44b1d.js"><link rel="prefetch" href="/assets/js/7.a9823576.js"><link rel="prefetch" href="/assets/js/8.6b47d49c.js"><link rel="prefetch" href="/assets/js/9.4eec40e1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.5bd6d4d0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">CodingDais</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Clouds" class="dropdown-title"><span class="title">Clouds</span> <span class="arrow down"></span></button> <button type="button" aria-label="Clouds" class="mobile-dropdown-title"><span class="title">Clouds</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/aws/" class="nav-link">
+  Aws
+</a></li><li class="dropdown-item"><!----> <a href="/gcp/" class="nav-link">
+  Gcp
+</a></li><li class="dropdown-item"><!----> <a href="/digitalocean/" class="nav-link">
+  DigitalOcean
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Framework" class="dropdown-title"><span class="title">Framework</span> <span class="arrow down"></span></button> <button type="button" aria-label="Framework" class="mobile-dropdown-title"><span class="title">Framework</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  Other
+</a></li><li class="dropdown-item"><!----> <a href="/vuejs/" class="nav-link">
+  Vuejs
+</a></li><li class="dropdown-item"><!----> <a href="/reactjs/" class="nav-link">
+  Reactjs
+</a></li><li class="dropdown-item"><!----> <a href="/nuxtjs/" class="nav-link">
+  NuxtJs
+</a></li><li class="dropdown-item"><!----> <a href="/angular/" class="nav-link">
+  Angular
+</a></li><li class="dropdown-item"><!----> <a href="/reactnative/" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/deno/" class="nav-link">
+  Deno
+</a></li><li class="dropdown-item"><!----> <a href="/flutter/" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/laravel/" class="nav-link">
+  Laravel
+</a></li><li class="dropdown-item"><!----> <a href="/spring/" class="nav-link">
+  Spring
+</a></li><li class="dropdown-item"><!----> <a href="/django/" class="nav-link">
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/flusk/" class="nav-link">
+  Flusk
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/tailwind/" class="nav-link">
+  Tailwind
+</a></li><li class="dropdown-item"><!----> <a href="/php/" class="nav-link">
+  Php
+</a></li><li class="dropdown-item"><!----> <a href="/csharp/" class="nav-link">
+  Csharp
+</a></li><li class="dropdown-item"><!----> <a href="/python/" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/dart/" class="nav-link">
+  Dart
+</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/mongodb/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  MongoDb
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tools" class="dropdown-title"><span class="title">Tools</span> <span class="arrow down"></span></button> <button type="button" aria-label="Tools" class="mobile-dropdown-title"><span class="title">Tools</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/#git-github" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#ssh-besic" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#docker" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#editors" class="nav-link">
+  Editors
+</a></li><li class="dropdown-item"><!----> <a href="/os/" class="nav-link">
+  Os
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#crome-extension" class="nav-link">
+  Crome Extension
+</a></li></ul></div></div><div class="nav-item"><a href="/contact.html" class="nav-link">
+  Contact
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Clouds" class="dropdown-title"><span class="title">Clouds</span> <span class="arrow down"></span></button> <button type="button" aria-label="Clouds" class="mobile-dropdown-title"><span class="title">Clouds</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/aws/" class="nav-link">
+  Aws
+</a></li><li class="dropdown-item"><!----> <a href="/gcp/" class="nav-link">
+  Gcp
+</a></li><li class="dropdown-item"><!----> <a href="/digitalocean/" class="nav-link">
+  DigitalOcean
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Framework" class="dropdown-title"><span class="title">Framework</span> <span class="arrow down"></span></button> <button type="button" aria-label="Framework" class="mobile-dropdown-title"><span class="title">Framework</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  Other
+</a></li><li class="dropdown-item"><!----> <a href="/vuejs/" class="nav-link">
+  Vuejs
+</a></li><li class="dropdown-item"><!----> <a href="/reactjs/" class="nav-link">
+  Reactjs
+</a></li><li class="dropdown-item"><!----> <a href="/nuxtjs/" class="nav-link">
+  NuxtJs
+</a></li><li class="dropdown-item"><!----> <a href="/angular/" class="nav-link">
+  Angular
+</a></li><li class="dropdown-item"><!----> <a href="/reactnative/" class="nav-link">
+  React Native
+</a></li><li class="dropdown-item"><!----> <a href="/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/deno/" class="nav-link">
+  Deno
+</a></li><li class="dropdown-item"><!----> <a href="/flutter/" class="nav-link">
+  Flutter
+</a></li><li class="dropdown-item"><!----> <a href="/laravel/" class="nav-link">
+  Laravel
+</a></li><li class="dropdown-item"><!----> <a href="/spring/" class="nav-link">
+  Spring
+</a></li><li class="dropdown-item"><!----> <a href="/django/" class="nav-link">
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/flusk/" class="nav-link">
+  Flusk
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/markdown/" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/tailwind/" class="nav-link">
+  Tailwind
+</a></li><li class="dropdown-item"><!----> <a href="/php/" class="nav-link">
+  Php
+</a></li><li class="dropdown-item"><!----> <a href="/csharp/" class="nav-link">
+  Csharp
+</a></li><li class="dropdown-item"><!----> <a href="/python/" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/dart/" class="nav-link">
+  Dart
+</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">
+  Mysql
+</a></li><li class="dropdown-item"><!----> <a href="/mongodb/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  MongoDb
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Tools" class="dropdown-title"><span class="title">Tools</span> <span class="arrow down"></span></button> <button type="button" aria-label="Tools" class="mobile-dropdown-title"><span class="title">Tools</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/#git-github" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#ssh-besic" class="nav-link">
+  SSH
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#docker" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#editors" class="nav-link">
+  Editors
+</a></li><li class="dropdown-item"><!----> <a href="/os/" class="nav-link">
+  Os
+</a></li><li class="dropdown-item"><!----> <a href="/tools/#crome-extension" class="nav-link">
+  Crome Extension
+</a></li></ul></div></div><div class="nav-item"><a href="/contact.html" class="nav-link">
+  Contact
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/mongodb/" aria-current="page" class="active sidebar-link">MongoDb Besci</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="mongodb-besci"><a href="#mongodb-besci" class="header-anchor">#</a> MongoDb Besci</h1> <div class="language-bash extra-class"><pre class="language-bash"><code>-<span class="token operator">&gt;</span> show dbs <span class="token operator">=</span><span class="token operator">&gt;</span> get list of database
+-<span class="token operator">&gt;</span> use dbname <span class="token operator">=</span><span class="token operator">&gt;</span> switch database
+-<span class="token operator">&gt;</span> show collections <span class="token operator">=</span><span class="token operator">&gt;</span> get list of tables
+-<span class="token operator">&gt;</span> db.dropDatabase<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> remove database whitch you selected.
+-<span class="token operator">&gt;</span> use rohandb <span class="token operator">=</span><span class="token operator">&gt;</span> create database not show <span class="token keyword">in</span> list because there is no data so what<span class="token string">'s why not showing in list
+
+-&gt; db =&gt; tell us whitch database we selected
+-&gt; db.createCollection(&quot;posts&quot;) =&gt; create table inside posts
+-&gt; if any table inside show database in list
+-&gt;  one insert
+db.posts.insert({
+	title:'</span>post thirdupdate<span class="token string">', 
+	body:'</span> body of post one<span class="token string">',
+	category:'</span>News<span class="token string">',
+	likes:4,
+	tags:['</span>news<span class="token string">', '</span>events<span class="token string">'],
+	user:{
+		name: &quot;rohan&quot;,
+		status:&quot;author&quot;
+	},
+	date:Date()
+})
+
+-&gt; multiple insert
+
+db.posts.insertMany([
+	{
+	title:'</span>post mul one<span class="token string">', 
+	body:'</span> body of post one<span class="token string">',
+	category:'</span>News<span class="token string">',
+	likes:4,
+	tags:['</span>news<span class="token string">', '</span>events<span class="token string">'],
+	user:{
+		name: &quot;rohan&quot;,
+		status:&quot;author&quot;
+	},
+	date:Date()
+	},
+	{
+	title:'</span>post mul two<span class="token string">', 
+	body:'</span> body of post one<span class="token string">',
+	category:'</span>News<span class="token string">',
+	likes:4,
+	tags:['</span>news<span class="token string">', '</span>events<span class="token string">'],
+	user:{
+		name: &quot;rohan&quot;,
+		status:&quot;author&quot;
+	},
+	date:Date()
+	}
+])
+
+
+// list of posts
+-&gt; db.posts.find()
+-&gt; db.posts.find().pretty()
+
+
+// only news category show same query where
+db.posts.find({category:&quot;news&quot;})
+db.posts.find({category:&quot;news&quot;}).pretty();
+
+sorts list 1 accending -1 deacending
+db.posts.find().sort({title:1}).pretty()
+
+// count
+db.posts.find({category:&quot;news&quot;}).count()
+
+
+// limit
+db.posts.find().limit(2)
+
+foreach
+db.posts.find().forEach(function(doc){print('</span>Blog Post: <span class="token string">'+ doc.title)})
+
+
+// get first
+db.posts.findOne({category:'</span>News<span class="token string">'})
+
+
+// update all fields // first object title / id second object update, third if object not found create new 
+tip this method remove all other fields if present inside
+
+db.posts.update({title:&quot;post lastone&quot;}, {title:'</span>first post update last one<span class="token string">', body:'</span>new post updated<span class="token string">', date:Date()}, {upsert:true}) 
+
+
+// only selected field replace and also insert new fields also if you create
+db.posts.update({title:&quot;post thirdupdate&quot;}, 
+{<span class="token variable">$set</span>:{title:'</span>first post update last one<span class="token string">', body:'</span>new post updated<span class="token string">', date:Date()}}) 
+
+
+
+// increament inbuilt increament function <span class="token variable">$inc</span>
+
+db.posts.update({_id: ObjectId(&quot;5e67cb2bfaa7aebeb4427a09&quot;}, {<span class="token variable">$inc</span>:{likes:1}})
+
+// rename of fields likes fields name change into views
+
+db.posts.update({_id: ObjectId(&quot;5e67cb2bfaa7aebeb4427a09&quot;)}, {<span class="token variable">$rename</span>:{likes:'</span>views<span class="token string">'}})
+
+// remove
+
+db.posts.remove({_id: ObjectId(&quot;5e67cb2bfaa7aebeb4427a09&quot;)})
+
+
+// update comments fields in post
+db.posts.update({_id : ObjectId(&quot;5e6743c6e50575b7ec38c4cf&quot;)}, 
+{<span class="token variable">$set</span>:{
+comments:[
+	{
+	  user:&quot;rohan dhiman&quot;,
+	body:&quot;first comment&quot;,
+	date:Date()	
+	},
+	{
+	  user:&quot;rohan dhiman&quot;,
+	body:&quot;second comment&quot;,
+	date:Date()	
+	}]
+}}) 
+
+
+// find by user of comment authors
+db.posts.find({comments:{<span class="token variable">$elemMatch</span>:{user:&quot;rohan dhiman&quot;}}})
+
+
+
+// title text search we have to use two query
+first create index after second qeury work
+db.posts.createIndex({title:'</span>text<span class="token string">'})
+db.posts.find({<span class="token variable">$text</span>:{<span class="token variable">$search</span>:&quot;<span class="token entity" title="\&quot;">\&quot;</span>first p<span class="token entity" title="\&quot;">\&quot;</span>&quot;}})
+
+
+
+db.posts.find({ views: { <span class="token variable">$gt</span>: 2 } })
+db.posts.find({ views: { <span class="token variable">$gte</span>: 7 } })
+db.posts.find({ views: { <span class="token variable">$lt</span>: 7 } })
+db.posts.find({ views: { <span class="token variable">$lte</span>: 7 } })
+
+
+
+
+
+
+
+
+
+
+Show Current Database
+db
+Create Or Switch Database
+use acme
+Drop
+db.dropDatabase()
+Create Collection
+db.createCollection('</span>posts<span class="token string">')
+Show Collections
+show collections
+Insert Row
+db.posts.insert({
+  title: '</span>Post One<span class="token string">',
+  body: '</span>Body of post one<span class="token string">',
+  category: '</span>News<span class="token string">',
+  tags: ['</span>news<span class="token string">', '</span>events<span class="token string">'],
+  user: {
+    name: '</span>John Doe<span class="token string">',
+    status: '</span>author<span class="token string">'
+  },
+  date: Date()
+})
+Insert Multiple Rows
+db.posts.insertMany([
+  {
+    title: '</span>Post Two<span class="token string">',
+    body: '</span>Body of post two<span class="token string">',
+    category: '</span>Technology<span class="token string">',
+    date: Date()
+  },
+  {
+    title: '</span>Post Three<span class="token string">',
+    body: '</span>Body of post three<span class="token string">',
+    category: '</span>News<span class="token string">',
+    date: Date()
+  },
+  {
+    title: '</span>Post Four<span class="token string">',
+    body: '</span>Body of post three<span class="token string">',
+    category: '</span>Entertainment<span class="token string">',
+    date: Date()
+  }
+])
+Get All Rows
+db.posts.find()
+Get All Rows Formatted
+db.find().pretty()
+Find Rows
+db.posts.find({ category: '</span>News<span class="token string">' })
+Sort Rows
+# asc
+db.posts.find().sort({ title: 1 }).pretty()
+# desc
+db.posts.find().sort({ title: -1 }).pretty()
+Count Rows
+db.posts.find().count()
+db.posts.find({ category: '</span>news<span class="token string">' }).count()
+Limit Rows
+db.posts.find().limit(2).pretty()
+Chaining
+db.posts.find().limit(2).sort({ title: 1 }).pretty()
+Foreach
+db.posts.find().forEach(function(doc) {
+  print(&quot;Blog Post: &quot; + doc.title)
+})
+Find One Row
+db.posts.findOne({ category: '</span>News<span class="token string">' })
+Find Specific Fields
+db.posts.find({ title: '</span>Post One<span class="token string">' }, {
+  title: 1,
+  author: 1
+})
+Update Row
+db.posts.update({ title: '</span>Post Two<span class="token string">' },
+{
+  title: '</span>Post Two<span class="token string">',
+  body: '</span>New body <span class="token keyword">for</span> post <span class="token number">2</span><span class="token string">',
+  date: Date()
+},
+{
+  upsert: true
+})
+Update Specific Field
+db.posts.update({ title: '</span>Post Two<span class="token string">' },
+{
+  <span class="token variable">$set</span>: {
+    body: '</span>Body <span class="token keyword">for</span> post <span class="token number">2</span><span class="token string">',
+    category: '</span>Technology<span class="token string">'
+  }
+})
+Increment Field (<span class="token variable">$inc</span>)
+db.posts.update({ title: '</span>Post Two<span class="token string">' },
+{
+  <span class="token variable">$inc</span>: {
+    likes: 5
+  }
+})
+Rename Field
+db.posts.update({ title: '</span>Post Two<span class="token string">' },
+{
+  <span class="token variable">$rename</span>: {
+    likes: '</span>views<span class="token string">'
+  }
+})
+Delete Row
+db.posts.remove({ title: '</span>Post Four<span class="token string">' })
+Sub-Documents
+db.posts.update({ title: '</span>Post One<span class="token string">' },
+{
+  <span class="token variable">$set</span>: {
+    comments: [
+      {
+        body: '</span>Comment One<span class="token string">',
+        user: '</span>Mary Williams<span class="token string">',
+        date: Date()
+      },
+      {
+        body: '</span>Comment Two<span class="token string">',
+        user: '</span>Harry White<span class="token string">',
+        date: Date()
+      }
+    ]
+  }
+})
+Find By Element in Array (<span class="token variable">$elemMatch</span>)
+db.posts.find({
+  comments: {
+     <span class="token variable">$elemMatch</span>: {
+       user: '</span>Mary Williams<span class="token string">'
+       }
+    }
+  }
+)
+Add Index
+db.posts.createIndex({ title: '</span>text' <span class="token punctuation">}</span><span class="token punctuation">)</span>
+Text Search
+db.posts.find<span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token variable">$text</span><span class="token builtin class-name">:</span> <span class="token punctuation">{</span>
+    <span class="token variable">$search</span><span class="token builtin class-name">:</span> <span class="token string">&quot;<span class="token entity" title="\&quot;">\&quot;</span>Post O<span class="token entity" title="\&quot;">\&quot;</span>&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+Greater <span class="token operator">&amp;</span> Less Than
+db.posts.find<span class="token punctuation">(</span><span class="token punctuation">{</span> views: <span class="token punctuation">{</span> <span class="token variable">$gt</span><span class="token builtin class-name">:</span> <span class="token number">2</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+db.posts.find<span class="token punctuation">(</span><span class="token punctuation">{</span> views: <span class="token punctuation">{</span> <span class="token variable">$gte</span><span class="token builtin class-name">:</span> <span class="token number">7</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+db.posts.find<span class="token punctuation">(</span><span class="token punctuation">{</span> views: <span class="token punctuation">{</span> <span class="token variable">$lt</span><span class="token builtin class-name">:</span> <span class="token number">7</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+db.posts.find<span class="token punctuation">(</span><span class="token punctuation">{</span> views: <span class="token punctuation">{</span> <span class="token variable">$lte</span><span class="token builtin class-name">:</span> <span class="token number">7</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.84ebb9eb.js" defer></script><script src="/assets/js/2.e4b52d1b.js" defer></script><script src="/assets/js/27.b2b83392.js" defer></script>
+  </body>
+</html>
